@@ -1,7 +1,6 @@
 import type { ContentPage } from "@/lib/content";
 import type { ProductWithScore } from "@/lib/products";
-
-const SITE_URL = "https://infanciasemtela.com.br";
+import { SITE_URL } from "@/lib/site";
 
 type JsonLd = Record<string, unknown>;
 

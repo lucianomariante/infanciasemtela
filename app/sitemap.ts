@@ -1,7 +1,6 @@
 import type { MetadataRoute } from "next";
 import { getAllPages, type ContentPage } from "@/lib/content";
-
-const SITE_URL = "https://infanciasemtela.com.br";
+import { SITE_URL } from "@/lib/site";
 
 function getPagePath(page: ContentPage): string {
   switch (page.type) {
