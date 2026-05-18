@@ -1,0 +1,138 @@
+[
+  {
+    "id": "prod-laboratorio-show-da-luna",
+    "title": "Laboratorio Criativo Show da Luna",
+    "price": "R$ 78,99",
+    "rating": 4.8,
+    "reviews": 324,
+    "tag": "Melhor geral",
+    "image": "/images/product-placeholder.png",
+    "affiliate_url": "#",
+    "pros": [
+      "Boa proposta criativa",
+      "Estimula curiosidade",
+      "Produto com bom volume de avaliacoes"
+    ],
+    "best_for": "criancas curiosas que gostam de explorar e criar",
+    "short_description": "Brinquedo com proposta criativa para estimular curiosidade, imaginacao e brincadeira ativa."
+  },
+  {
+    "id": "prod-mesinha-didatica",
+    "title": "Mesinha Didatica Infantil com Atividades",
+    "price": "R$ 49,90",
+    "rating": 4.9,
+    "reviews": 13000,
+    "tag": "Custo-beneficio",
+    "image": "/images/product-placeholder.png",
+    "affiliate_url": "#",
+    "pros": [
+      "Preco acessivel",
+      "Muitas avaliacoes",
+      "Boa opcao para uso diario"
+    ],
+    "best_for": "pais que querem uma opcao barata, simples e funcional",
+    "short_description": "Opcao acessivel para manter a crianca ocupada com atividades simples no dia a dia."
+  },
+  {
+    "id": "prod-girafa-didatica-mercotoys",
+    "title": "Girafa Didatica Mercotoys",
+    "price": "R$ 31,99",
+    "rating": 4.9,
+    "reviews": 318,
+    "tag": "Mais barato",
+    "image": "/images/product-placeholder.png",
+    "affiliate_url": "#",
+    "pros": [
+      "Preco baixo",
+      "Boa nota media",
+      "Marca conhecida em brinquedos infantis"
+    ],
+    "best_for": "quem quer um brinquedo simples e barato para presentear",
+    "short_description": "Brinquedo didatico simples, leve e acessivel para criancas pequenas."
+  },
+  {
+    "id": "prod-cubo-didatico-mercotoys",
+    "title": "Mercotoys Cubo Didatico Educativo",
+    "price": "R$ 37,90",
+    "rating": 4.9,
+    "reviews": 708,
+    "tag": "Bom para coordenacao",
+    "image": "/images/product-placeholder.png",
+    "affiliate_url": "#",
+    "pros": [
+      "Estimula encaixe e coordenacao",
+      "Preco competitivo",
+      "Boa quantidade de avaliacoes"
+    ],
+    "best_for": "criancas que gostam de encaixar, girar e explorar formas",
+    "short_description": "Cubo educativo com proposta de encaixe e exploracao manual."
+  },
+  {
+    "id": "prod-box-block-dismat",
+    "title": "Box Block Dismat",
+    "price": "R$ 62,00",
+    "rating": 4.9,
+    "reviews": 230,
+    "tag": "Bom para montar",
+    "image": "/images/product-placeholder.png",
+    "affiliate_url": "#",
+    "pros": [
+      "Estimula construcao",
+      "Boa nota media",
+      "Ajuda na criatividade"
+    ],
+    "best_for": "criancas que gostam de montar e desmontar",
+    "short_description": "Blocos de montar para estimular criatividade, coordenacao e brincadeiras abertas."
+  },
+  {
+    "id": "prod-giro-magico-dismat",
+    "title": "Giro Magico Dismat",
+    "price": "R$ 55,90",
+    "rating": 4.9,
+    "reviews": 11000,
+    "tag": "Mais popular",
+    "image": "/images/product-placeholder.png",
+    "affiliate_url": "#",
+    "pros": [
+      "Altissimo volume de avaliacoes",
+      "Boa aceitacao",
+      "Preco intermediario"
+    ],
+    "best_for": "quem quer uma escolha popular e segura",
+    "short_description": "Brinquedo popular com alto volume de avaliacoes e boa aceitacao entre compradores."
+  },
+  {
+    "id": "prod-fisher-price-torre-potinhos",
+    "title": "Fisher Price Torre de Potinhos Coloridos",
+    "price": "R$ 53,00",
+    "rating": 4.6,
+    "reviews": 465,
+    "tag": "Marca forte",
+    "image": "/images/product-placeholder.png",
+    "affiliate_url": "#",
+    "pros": [
+      "Marca reconhecida",
+      "Boa para empilhar",
+      "Estimula percepcao de tamanho e cor"
+    ],
+    "best_for": "criancas menores ou em fase de empilhar e organizar",
+    "short_description": "Classico brinquedo de empilhar com cores e tamanhos diferentes."
+  },
+  {
+    "id": "prod-formas-magicas-babebi",
+    "title": "Brinquedos Educativo Formas Magicas Babebi 6066",
+    "price": "R$ 72,90",
+    "rating": 5.0,
+    "reviews": 84,
+    "tag": "Premium educativo",
+    "image": "/images/product-placeholder.png",
+    "affiliate_url": "#",
+    "pros": [
+      "Proposta educativa forte",
+      "Boa avaliacao media",
+      "Visual mais premium"
+    ],
+    "best_for": "pais que querem um brinquedo educativo com acabamento mais cuidadoso",
+    "short_description": "Brinquedo educativo focado em formas, logica e desenvolvimento cognitivo."
+  }
+]

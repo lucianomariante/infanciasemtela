@@ -1,0 +1,53 @@
+{
+  "slug": "melhor-brinquedo-para-3-anos",
+  "type": "bestof",
+  "title": "Melhor brinquedo para 3 anos: opções que realmente valem a pena",
+  "h1": "Melhor brinquedo para 3 anos",
+  "intro": "Selecionamos opções que fazem mais sentido para crianças de 3 anos, priorizando diversão, desenvolvimento, segurança e uso real no dia a dia.",
+  "primary_keyword": "melhor brinquedo para 3 anos",
+  "secondary_keywords": [
+    "brinquedo educativo para 3 anos",
+    "presente para criança de 3 anos",
+    "melhores brinquedos para 3 anos"
+  ],
+  "page_goal": "Ajudar pais a escolher o melhor brinquedo para crianças de 3 anos com foco em utilidade real e intenção de compra.",
+  "recommended_blocks": [
+    "hero",
+    "quick-picks",
+    "product-list",
+    "how-we-chose",
+    "who-it-is-for",
+    "when-not-worth-it",
+    "faq",
+    "internal-links"
+  ],
+  "product_ids": [
+    "prod-mesinha-didatica",
+    "prod-giro-magico-dismat",
+    "prod-laboratorio-show-da-luna",
+    "prod-cubo-didatico-mercotoys",
+    "prod-box-block-dismat",
+    "prod-girafa-didatica-mercotoys",
+    "prod-fisher-price-torre-potinhos",
+    "prod-formas-magicas-babebi"
+  ],
+  "faq": [
+    {
+      "question": "Qual é o melhor brinquedo para 3 anos?",
+      "answer": "O melhor brinquedo para 3 anos costuma ser aquele que estimula coordenação, imaginação e autonomia sem ser complexo demais para a faixa etária."
+    },
+    {
+      "question": "Brinquedo educativo para 3 anos vale a pena?",
+      "answer": "Vale sim, desde que a proposta seja divertida e compatível com a fase da criança. O ideal é unir aprendizado e prazer de brincar."
+    },
+    {
+      "question": "O que evitar ao comprar brinquedo para 3 anos?",
+      "answer": "Evite opções frágeis, complexas demais, com peças pequenas ou que prometem muito mas cansam rápido no uso real."
+    }
+  ],
+  "internal_links": [
+    "/melhores/melhor-brinquedo-para-4-anos",
+    "/presentes/presente-para-menino-de-5-anos",
+    "/guias/brinquedos-sem-tela-para-criancas"
+  ]
+}

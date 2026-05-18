@@ -1,0 +1,53 @@
+{
+  "slug": "melhor-brinquedo-para-4-anos",
+  "type": "bestof",
+  "title": "Melhor brinquedo para 4 anos: escolhas inteligentes para brincar melhor",
+  "h1": "Melhor brinquedo para 4 anos",
+  "intro": "Reunimos brinquedos que combinam com a fase dos 4 anos, quando a criança já explora mais criatividade, movimento, faz de conta e desafios simples.",
+  "primary_keyword": "melhor brinquedo para 4 anos",
+  "secondary_keywords": [
+    "brinquedo educativo para 4 anos",
+    "melhores brinquedos para 4 anos",
+    "presente para criança de 4 anos"
+  ],
+  "page_goal": "Rankear para intenção transacional e ajudar o usuário a decidir com segurança o melhor brinquedo para 4 anos.",
+  "recommended_blocks": [
+    "hero",
+    "quick-picks",
+    "product-list",
+    "how-we-chose",
+    "development-fit",
+    "when-not-worth-it",
+    "faq",
+    "internal-links"
+  ],
+  "product_ids": [
+    "prod-mesinha-didatica",
+    "prod-giro-magico-dismat",
+    "prod-laboratorio-show-da-luna",
+    "prod-cubo-didatico-mercotoys",
+    "prod-box-block-dismat",
+    "prod-girafa-didatica-mercotoys",
+    "prod-fisher-price-torre-potinhos",
+    "prod-formas-magicas-babebi"
+  ],
+  "faq": [
+    {
+      "question": "Qual brinquedo prende mais a atenção aos 4 anos?",
+      "answer": "Brinquedos com interação ativa, faz de conta, construção ou desafio leve costumam prender mais a atenção nessa idade."
+    },
+    {
+      "question": "Brinquedo educativo para 4 anos precisa ensinar algo?",
+      "answer": "Não necessariamente de forma explícita. O melhor é quando a criança aprende brincando, sem parecer obrigação."
+    },
+    {
+      "question": "Vale comprar brinquedo mais caro para 4 anos?",
+      "answer": "Só vale quando o uso é recorrente, a construção é boa e a proposta acompanha bem a fase da criança."
+    }
+  ],
+  "internal_links": [
+    "/melhores/melhor-brinquedo-para-3-anos",
+    "/guias/brinquedos-sem-tela-para-criancas",
+    "/presentes/presente-infantil-ate-50-reais"
+  ]
+}

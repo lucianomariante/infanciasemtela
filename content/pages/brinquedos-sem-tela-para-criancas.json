@@ -1,0 +1,52 @@
+{
+  "slug": "brinquedos-sem-tela-para-criancas",
+  "type": "guide",
+  "title": "Brinquedos sem tela para crianças: opções mais criativas e úteis",
+  "h1": "Brinquedos sem tela para crianças",
+  "intro": "Separamos brinquedos sem tela que realmente ajudam a ocupar, entreter e desenvolver a criança, sem depender de celular, tablet ou TV.",
+  "primary_keyword": "brinquedos sem tela para crianças",
+  "secondary_keywords": [
+    "brinquedos infantis sem tela",
+    "brinquedos educativos sem tela",
+    "atividades sem tela para crianças"
+  ],
+  "page_goal": "Fortalecer o posicionamento editorial da marca e captar tráfego qualificado com boa ponte para páginas transacionais.",
+  "recommended_blocks": [
+    "hero",
+    "why-screen-free",
+    "top-categories",
+    "product-list",
+    "how-to-choose",
+    "faq",
+    "internal-links"
+  ],
+  "product_ids": [
+    "prod-mesinha-didatica",
+    "prod-giro-magico-dismat",
+    "prod-laboratorio-show-da-luna",
+    "prod-cubo-didatico-mercotoys",
+    "prod-box-block-dismat",
+    "prod-girafa-didatica-mercotoys",
+    "prod-fisher-price-torre-potinhos",
+    "prod-formas-magicas-babebi"
+  ],
+  "faq": [
+    {
+      "question": "Brinquedos sem tela realmente prendem a atenção?",
+      "answer": "Prendem sim, especialmente quando combinam movimento, desafio, faz de conta, montagem ou exploração sensorial."
+    },
+    {
+      "question": "Qual brinquedo sem tela vale mais a pena?",
+      "answer": "Depende da idade e do perfil da criança. Os melhores costumam ser os que incentivam participação ativa e repetição de uso."
+    },
+    {
+      "question": "Brinquedo sem tela ajuda no desenvolvimento?",
+      "answer": "Em muitos casos, sim. Eles podem estimular criatividade, coordenação, linguagem, autonomia e interação."
+    }
+  ],
+  "internal_links": [
+    "/melhores/melhor-brinquedo-para-3-anos",
+    "/melhores/melhor-brinquedo-para-4-anos",
+    "/presentes/presente-para-menino-de-5-anos"
+  ]
+}
