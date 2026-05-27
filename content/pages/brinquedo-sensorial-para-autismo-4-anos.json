@@ -24,7 +24,11 @@
     "faq",
     "cta"
   ],
-  "product_ids": [],
+  "product_ids": [
+    "prod-brinquedo-sensorial-infantil",
+    "prod-busy-board-montessori",
+    "prod-giro-magico-dismat"
+  ],
   "faq": [
     {
       "question": "O que é um brinquedo sensorial para autismo?",

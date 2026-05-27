@@ -23,7 +23,13 @@
     "product-list",
     "faq"
   ],
-  "product_ids": [],
+  "product_ids": [
+    "prod-busy-board-montessori",
+    "prod-brinquedo-sensorial-infantil",
+    "prod-quebra-cabeca-infantil",
+    "prod-lousa-magnetica-infantil",
+    "prod-pesca-magnetica"
+  ],
   "faq": [
     {
       "question": "Que tipo de brinquedo sem tela pode acalmar a criança?",

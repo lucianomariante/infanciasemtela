@@ -1,13 +1,13 @@
 [
   {
     "id": "prod-laboratorio-show-da-luna",
-    "title": "Laboratorio Criativo Show da Luna",
+    "title": "Laboratório Criativo Show da Luna",
     "price": "R$ 78,99",
     "rating": 4.8,
     "reviews": 324,
     "tag": "Melhor geral",
     "image": "/images/product-placeholder.png",
-    "affiliate_url": "#",
+    "affiliate_url": "https://amzn.to/3PIx56A",
     "pros": [
       "Boa proposta criativa",
       "Estimula curiosidade",
@@ -18,13 +18,13 @@
   },
   {
     "id": "prod-mesinha-didatica",
-    "title": "Mesinha Didatica Infantil com Atividades",
+    "title": "Mesinha Didática Infantil com Atividades",
     "price": "R$ 49,90",
     "rating": 4.9,
     "reviews": 13000,
     "tag": "Custo-beneficio",
     "image": "/images/product-placeholder.png",
-    "affiliate_url": "#",
+    "affiliate_url": "https://amzn.to/4nOF3aG",
     "pros": [
       "Preco acessivel",
       "Muitas avaliacoes",
@@ -35,13 +35,13 @@
   },
   {
     "id": "prod-girafa-didatica-mercotoys",
-    "title": "Girafa Didatica Mercotoys",
+    "title": "Girafa Didática Mercotoys",
     "price": "R$ 31,99",
     "rating": 4.9,
     "reviews": 318,
     "tag": "Mais barato",
     "image": "/images/product-placeholder.png",
-    "affiliate_url": "#",
+    "affiliate_url": "https://amzn.to/3RwAJkt",
     "pros": [
       "Preco baixo",
       "Boa nota media",
@@ -52,13 +52,13 @@
   },
   {
     "id": "prod-cubo-didatico-mercotoys",
-    "title": "Mercotoys Cubo Didatico Educativo",
+    "title": "Mercotoys Cubo Didático Educativo",
     "price": "R$ 37,90",
     "rating": 4.9,
     "reviews": 708,
     "tag": "Bom para coordenacao",
     "image": "/images/product-placeholder.png",
-    "affiliate_url": "#",
+    "affiliate_url": "https://amzn.to/4dAwSvu",
     "pros": [
       "Estimula encaixe e coordenacao",
       "Preco competitivo",
@@ -75,7 +75,7 @@
     "reviews": 230,
     "tag": "Bom para montar",
     "image": "/images/product-placeholder.png",
-    "affiliate_url": "#",
+    "affiliate_url": "https://amzn.to/4wXfBEo",
     "pros": [
       "Estimula construcao",
       "Boa nota media",
@@ -86,13 +86,13 @@
   },
   {
     "id": "prod-giro-magico-dismat",
-    "title": "Giro Magico Dismat",
+    "title": "Giro Mágico Dismat",
     "price": "R$ 55,90",
     "rating": 4.9,
     "reviews": 11000,
     "tag": "Mais popular",
     "image": "/images/product-placeholder.png",
-    "affiliate_url": "#",
+    "affiliate_url": "https://amzn.to/3Q52y2X",
     "pros": [
       "Altissimo volume de avaliacoes",
       "Boa aceitacao",
@@ -109,7 +109,7 @@
     "reviews": 465,
     "tag": "Marca forte",
     "image": "/images/product-placeholder.png",
-    "affiliate_url": "#",
+    "affiliate_url": "https://amzn.to/49RvRg4",
     "pros": [
       "Marca reconhecida",
       "Boa para empilhar",
@@ -120,13 +120,13 @@
   },
   {
     "id": "prod-formas-magicas-babebi",
-    "title": "Brinquedos Educativo Formas Magicas Babebi 6066",
+    "title": "Formas Mágicas Babebi 6066",
     "price": "R$ 72,90",
     "rating": 5.0,
     "reviews": 84,
     "tag": "Premium educativo",
     "image": "/images/product-placeholder.png",
-    "affiliate_url": "#",
+    "affiliate_url": "https://amzn.to/4nSgc64",
     "pros": [
       "Proposta educativa forte",
       "Boa avaliacao media",
@@ -134,5 +134,124 @@
     ],
     "best_for": "pais que querem um brinquedo educativo com acabamento mais cuidadoso",
     "short_description": "Brinquedo educativo focado em formas, logica e desenvolvimento cognitivo."
+  },
+  {
+    "id": "prod-busy-board-montessori",
+    "title": "Busy Board Montessori",
+    "price": "Consultar preco",
+    "rating": 0,
+    "reviews": 0,
+    "tag": "Atividades manuais",
+    "image": "/images/product-placeholder.png",
+    "affiliate_url": "https://amzn.to/4wRDH3f",
+    "pros": [
+      "Atividades de abrir e fechar",
+      "Estimula manipulacao manual",
+      "Formato pratico para levar"
+    ],
+    "best_for": "criancas que gostam de explorar fechos, abas e tarefas manuais",
+    "short_description": "Painel de atividades manuais para explorar movimentos simples sem tela."
+  },
+  {
+    "id": "prod-brinquedo-sensorial-infantil",
+    "title": "Brinquedo Sensorial Infantil",
+    "price": "Consultar preco",
+    "rating": 0,
+    "reviews": 0,
+    "tag": "Exploracao sensorial",
+    "image": "/images/product-placeholder.png",
+    "affiliate_url": "https://amzn.to/4v9rpBv",
+    "pros": [
+      "Proposta sensorial",
+      "Brincadeira sem tela",
+      "Uso simples no dia a dia"
+    ],
+    "best_for": "criancas interessadas em exploracao tatil e sensorial",
+    "short_description": "Opcao sensorial para momentos de exploracao e brincadeira tranquila."
+  },
+  {
+    "id": "prod-quebra-cabeca-infantil",
+    "title": "Quebra Cabeça Infantil",
+    "price": "Consultar preco",
+    "rating": 0,
+    "reviews": 0,
+    "tag": "Foco e logica",
+    "image": "/images/product-placeholder.png",
+    "affiliate_url": "https://amzn.to/4dzNGTj",
+    "pros": [
+      "Estimula tentativa e erro",
+      "Atividade silenciosa",
+      "Ajuda a manter o foco"
+    ],
+    "best_for": "criancas que gostam de montar figuras e resolver desafios simples",
+    "short_description": "Quebra-cabeca infantil para brincar com concentracao e raciocinio visual."
+  },
+  {
+    "id": "prod-jogo-encaixe-madeira",
+    "title": "Jogo de Encaixe Infantil Madeira",
+    "price": "Consultar preco",
+    "rating": 0,
+    "reviews": 0,
+    "tag": "Encaixe em madeira",
+    "image": "/images/product-placeholder.png",
+    "affiliate_url": "https://amzn.to/49mJfZr",
+    "pros": [
+      "Atividade de encaixe",
+      "Estimula coordenacao fina",
+      "Brincadeira manual"
+    ],
+    "best_for": "criancas em fase de explorar formas e encaixes",
+    "short_description": "Jogo de madeira voltado a encaixes, formas e coordenacao motora fina."
+  },
+  {
+    "id": "prod-lousa-magnetica-infantil",
+    "title": "Lousa Magnética Infantil",
+    "price": "Consultar preco",
+    "rating": 0,
+    "reviews": 0,
+    "tag": "Desenho criativo",
+    "image": "/images/product-placeholder.png",
+    "affiliate_url": "https://amzn.to/4eb1Fhx",
+    "pros": [
+      "Permite desenhar e apagar",
+      "Estimula criatividade",
+      "Atividade reutilizavel"
+    ],
+    "best_for": "criancas que gostam de desenhar e criar livremente",
+    "short_description": "Lousa magnetica para desenho livre e atividades criativas sem tela."
+  },
+  {
+    "id": "prod-pesca-magnetica",
+    "title": "Pesca Magnética",
+    "price": "Consultar preco",
+    "rating": 0,
+    "reviews": 0,
+    "tag": "Coordenacao",
+    "image": "/images/product-placeholder.png",
+    "affiliate_url": "https://amzn.to/4eb1Fhx",
+    "pros": [
+      "Atividade de pescaria",
+      "Exige coordenacao manual",
+      "Pode ser jogado em turnos"
+    ],
+    "best_for": "criancas que gostam de desafios motores simples",
+    "short_description": "Brincadeira de pesca magnetica para praticar coordenacao e paciencia."
+  },
+  {
+    "id": "prod-brastoy-blocos-magneticos-108",
+    "title": "Brastoy Blocos de Montar Magnéticos Construção Infantil Brinquedos Educativo STEM 108 Peças",
+    "price": "Consultar preco",
+    "rating": 0,
+    "reviews": 0,
+    "tag": "Construcao STEM",
+    "image": "/images/product-placeholder.png",
+    "affiliate_url": "https://amzn.to/4fbr8t9",
+    "pros": [
+      "Blocos de montar magneticos",
+      "Permite construcoes variadas",
+      "Proposta criativa"
+    ],
+    "best_for": "criancas que gostam de montar estruturas e experimentar formas",
+    "short_description": "Conjunto magnetico de 108 pecas para construcoes e brincadeiras criativas."
   }
 ]

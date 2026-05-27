@@ -20,7 +20,11 @@
     "product-list",
     "faq"
   ],
-  "product_ids": [],
+  "product_ids": [
+    "prod-jogo-encaixe-madeira",
+    "prod-formas-magicas-babebi",
+    "prod-cubo-didatico-mercotoys"
+  ],
   "faq": [
     {
       "question": "Quais características procurar em um brinquedo de encaixe para 2 anos?",

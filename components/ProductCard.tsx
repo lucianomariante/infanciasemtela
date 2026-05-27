@@ -48,6 +48,7 @@ export function ProductCard({
 }: ProductCardProps) {
   const formattedPrice = price;
   const href = normalizeAffiliateUrl(affiliate_url);
+  const hasVerifiedRating = rating > 0 && reviews > 0;
   const cta = getCTA(
     {
       affiliate_url,
@@ -96,14 +97,16 @@ export function ProductCard({
             {formattedPrice}
           </p>
 
-          <div className="mt-4 flex items-center gap-2 text-sm text-slate-600">
-            <span className="text-amber-500" aria-hidden="true">
-              *****
-            </span>
-            <span>
-              {rating} ({reviews} avaliacoes)
-            </span>
-          </div>
+          {hasVerifiedRating ? (
+            <div className="mt-4 flex items-center gap-2 text-sm text-slate-600">
+              <span className="text-amber-500" aria-hidden="true">
+                *****
+              </span>
+              <span>
+                {rating} ({reviews} avaliacoes)
+              </span>
+            </div>
+          ) : null}
 
           <ul className="mt-5 space-y-2 text-sm leading-6 text-slate-700">
             {pros.map((pro) => (

@@ -20,7 +20,12 @@
     "how-to-use",
     "faq"
   ],
-  "product_ids": [],
+  "product_ids": [
+    "prod-busy-board-montessori",
+    "prod-jogo-encaixe-madeira",
+    "prod-formas-magicas-babebi",
+    "prod-cubo-didatico-mercotoys"
+  ],
   "faq": [
     {
       "question": "A partir de qual idade este tipo de brinquedo é indicado?",

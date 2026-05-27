@@ -20,7 +20,12 @@
     "product-list",
     "faq"
   ],
-  "product_ids": [],
+  "product_ids": [
+    "prod-laboratorio-show-da-luna",
+    "prod-lousa-magnetica-infantil",
+    "prod-brastoy-blocos-magneticos-108",
+    "prod-box-block-dismat"
+  ],
   "faq": [
     {
       "question": "Por que priorizar brinquedos criativos sem tela para uma criança de 4 anos?",

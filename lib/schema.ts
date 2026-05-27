@@ -82,30 +82,44 @@ export function generateItemListSchema(
     name: page.h1,
     itemListOrder: "https://schema.org/ItemListOrderDescending",
     numberOfItems: products.length,
-    itemListElement: products.map((product, index) => ({
-      "@type": "ListItem",
-      position: index + 1,
-      url: `${SITE_URL}${pagePath}#${product.id}`,
-      item: {
-        "@type": "Product",
-        name: product.title,
-        description: product.short_description,
-        image: `${SITE_URL}${product.image}`,
-        offers: {
-          "@type": "Offer",
-          priceCurrency: "BRL",
-          price: getNumericPrice(product.price),
-          url: product.affiliate_url && product.affiliate_url !== ""
-            ? product.affiliate_url
-            : "#",
+    itemListElement: products.map((product, index) => {
+      const numericPrice = getNumericPrice(product.price);
+      const hasVerifiedRating = product.rating > 0 && product.reviews > 0;
+
+      return {
+        "@type": "ListItem",
+        position: index + 1,
+        url: `${SITE_URL}${pagePath}#${product.id}`,
+        item: {
+          "@type": "Product",
+          name: product.title,
+          description: product.short_description,
+          image: `${SITE_URL}${product.image}`,
+          ...(numericPrice > 0
+            ? {
+                offers: {
+                  "@type": "Offer",
+                  priceCurrency: "BRL",
+                  price: numericPrice,
+                  url:
+                    product.affiliate_url && product.affiliate_url !== ""
+                      ? product.affiliate_url
+                      : "#",
+                },
+              }
+            : {}),
+          ...(hasVerifiedRating
+            ? {
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: product.rating,
+                  reviewCount: product.reviews,
+                },
+              }
+            : {}),
         },
-        aggregateRating: {
-          "@type": "AggregateRating",
-          ratingValue: product.rating,
-          reviewCount: product.reviews,
-        },
-      },
-    })),
+      };
+    }),
   };
 }
 
