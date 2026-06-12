@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { Icon } from "@/components/ui/Icon";
+import { SectionHeader } from "@/components/ui/SectionHeader";
 
 type InternalLinksProps = {
   links: {
@@ -14,24 +16,22 @@ export function InternalLinks({ links }: InternalLinksProps) {
 
   return (
     <section className="mt-14 sm:mt-20" aria-labelledby="internal-links-title">
-      <div className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm shadow-slate-200/70 sm:p-6">
-        <p className="text-sm font-semibold uppercase tracking-[0.18em] text-teal-700">
-          Continue lendo
-        </p>
-        <h2
+      <div className="rounded-[1.5rem] border border-[#e7dccb] bg-[#f6eee2]/70 p-5 sm:p-8">
+        <SectionHeader
+          eyebrow="Continue explorando"
           id="internal-links-title"
-          className="mt-2 text-2xl font-semibold tracking-tight text-slate-950"
-        >
-          Guias relacionados
-        </h2>
-        <div className="mt-5 grid gap-3 sm:grid-cols-2">
+          title="Guias relacionados"
+          description="Outros caminhos para escolher por idade, interesse e momento da família."
+        />
+        <div className="mt-6 grid gap-3 sm:grid-cols-2">
           {links.map((link) => (
             <Link
               key={link.url}
               href={link.url}
-              className="rounded-md border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-medium leading-6 text-slate-800 transition duration-200 ease-out hover:border-teal-200 hover:bg-teal-50 hover:text-teal-900"
+              className="group flex items-center justify-between gap-3 rounded-xl border border-white bg-white px-4 py-4 text-sm font-semibold leading-6 text-stone-800 shadow-sm transition hover:-translate-y-0.5 hover:border-teal-100 hover:text-teal-800 hover:shadow-md"
             >
-              {link.title}
+              <span>{link.title}</span>
+              <Icon className="size-4 shrink-0 transition group-hover:translate-x-1" name="arrow" />
             </Link>
           ))}
         </div>

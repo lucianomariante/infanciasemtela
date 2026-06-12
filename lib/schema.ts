@@ -93,8 +93,15 @@ export function generateItemListSchema(
         item: {
           "@type": "Product",
           name: product.title,
-          description: product.short_description,
-          image: `${SITE_URL}${product.image}`,
+          description: product.description,
+          ...(product.imageUrl
+            ? {
+                image: product.imageUrl.startsWith("http")
+                  ? product.imageUrl
+                  : `${SITE_URL}${product.imageUrl}`,
+              }
+            : {}),
+          ...(product.asin ? { sku: product.asin } : {}),
           ...(numericPrice > 0
             ? {
                 offers: {
@@ -102,8 +109,8 @@ export function generateItemListSchema(
                   priceCurrency: "BRL",
                   price: numericPrice,
                   url:
-                    product.affiliate_url && product.affiliate_url !== ""
-                      ? product.affiliate_url
+                    product.amazonUrl && product.amazonUrl !== ""
+                      ? product.amazonUrl
                       : "#",
                 },
               }

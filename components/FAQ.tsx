@@ -1,4 +1,6 @@
 import type { FAQItem } from "@/lib/content";
+import { Icon } from "@/components/ui/Icon";
+import { SectionHeader } from "@/components/ui/SectionHeader";
 
 type FAQProps = {
   items: FAQItem[];
@@ -11,31 +13,29 @@ export function FAQ({ items }: FAQProps) {
 
   return (
     <section className="mt-14 sm:mt-20" aria-labelledby="faq-title">
-      <div className="max-w-3xl">
-        <p className="text-sm font-semibold uppercase tracking-[0.18em] text-teal-700">
-          D&uacute;vidas comuns
-        </p>
-        <h2
-          id="faq-title"
-          className="mt-3 text-2xl font-semibold tracking-tight text-slate-950 sm:text-3xl"
-        >
-          Perguntas frequentes
-        </h2>
-      </div>
+      <SectionHeader
+        eyebrow="Dúvidas comuns"
+        id="faq-title"
+        title="Perguntas frequentes"
+        description="Respostas diretas para escolher com mais segurança e menos dúvida."
+      />
 
-      <div className="mt-7 grid gap-4">
+      <div className="mt-7 grid gap-3">
         {items.map((item) => (
-          <article
+          <details
             key={item.question}
-            className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm shadow-slate-200/60 sm:p-6"
+            className="group rounded-2xl border border-[#e7dccb] bg-white shadow-[0_8px_25px_rgba(73,58,39,0.05)] open:shadow-[0_12px_30px_rgba(73,58,39,0.08)]"
           >
-            <h3 className="text-lg font-semibold leading-7 text-slate-950">
+            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-5 py-5 text-base font-semibold leading-7 text-stone-950 marker:hidden sm:px-6">
               {item.question}
-            </h3>
-            <p className="mt-3 text-base leading-7 text-slate-700">
+              <span className="grid size-8 shrink-0 place-items-center rounded-full bg-[#f6eee2] text-amber-800 transition group-open:rotate-90">
+                <Icon className="size-4" name="arrow" />
+              </span>
+            </summary>
+            <p className="border-t border-[#eee5d8] px-5 py-5 text-base leading-7 text-stone-600 sm:px-6">
               {item.answer}
             </p>
-          </article>
+          </details>
         ))}
       </div>
     </section>

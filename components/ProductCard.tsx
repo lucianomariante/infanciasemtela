@@ -1,139 +1,103 @@
-import Image from "next/image";
+import { ProductImage } from "@/components/ProductImage";
+import { Icon } from "@/components/ui/Icon";
+import { RecommendationBadge } from "@/components/ui/RecommendationBadge";
 import { normalizeAffiliateUrl, type Product } from "@/lib/products";
 
 type ProductCardProps = Pick<
   Product,
-  | "affiliate_url"
-  | "best_for"
-  | "image"
-  | "price"
-  | "pros"
+  | "ageRange"
+  | "amazonUrl"
+  | "badge"
+  | "benefits"
+  | "bestFor"
+  | "description"
+  | "imageAlt"
+  | "imageUrl"
   | "rating"
   | "reviews"
-  | "short_description"
-  | "tag"
   | "title"
-> & {
-  index?: number;
-};
-
-function getCTA(_product: ProductCardProps, index = 0): string {
-  if (index === 0) {
-    return "Ver preço agora";
-  }
-
-  if (index === 1) {
-    return "Melhor custo-benefício";
-  }
-
-  if (index === 2) {
-    return "Ver oferta na Amazon";
-  }
-
-  return "Conferir preço";
-}
+>;
 
 export function ProductCard({
-  affiliate_url,
-  best_for,
-  image,
-  price,
-  pros,
+  ageRange,
+  amazonUrl,
+  badge,
+  benefits,
+  bestFor,
+  description,
+  imageAlt,
+  imageUrl,
   rating,
   reviews,
-  short_description,
-  tag,
   title,
-  index = 0,
 }: ProductCardProps) {
-  const formattedPrice = price;
-  const href = normalizeAffiliateUrl(affiliate_url);
+  const href = normalizeAffiliateUrl(amazonUrl);
   const hasVerifiedRating = rating > 0 && reviews > 0;
-  const cta = getCTA(
-    {
-      affiliate_url,
-      best_for,
-      image,
-      price,
-      pros,
-      rating,
-      reviews,
-      short_description,
-      tag,
-      title,
-    },
-    index,
-  );
 
   return (
-    <article className="group flex h-full flex-col overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm shadow-slate-200/70 transition duration-200 ease-out hover:-translate-y-1 hover:border-teal-200 hover:shadow-lg hover:shadow-slate-200/80">
-      <div className="aspect-[4/3] overflow-hidden bg-slate-100">
-        <Image
-          src={image}
-          alt={title}
-          width={640}
-          height={480}
-          className="h-full w-full object-cover transition duration-300 ease-out group-hover:scale-[1.02]"
-        />
-      </div>
+    <article className="group flex h-full flex-col overflow-hidden rounded-[1.5rem] border border-[#e7dccb] bg-white shadow-[0_14px_40px_rgba(73,58,39,0.08)] transition duration-300 hover:-translate-y-1 hover:border-[#d4b98f] hover:shadow-[0_20px_50px_rgba(73,58,39,0.13)]">
+      <ProductImage
+        imageUrl={imageUrl}
+        alt={imageAlt}
+        title={title}
+      />
 
-      <div className="flex flex-1 flex-col p-5">
-        <div className="flex items-start justify-between gap-4">
-          <span className="inline-flex rounded-full bg-teal-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-teal-700 ring-1 ring-teal-100">
-            {tag}
-          </span>
+      <div className="flex flex-1 flex-col p-5 sm:p-6">
+        <div className="flex flex-wrap items-center gap-2">
+          <RecommendationBadge>{badge}</RecommendationBadge>
+          {ageRange ? (
+            <span className="rounded-full bg-[#f6eee2] px-3 py-1.5 text-[0.68rem] font-bold uppercase tracking-[0.12em] text-amber-900">
+              {ageRange}
+            </span>
+          ) : null}
         </div>
 
-        <div className="mt-5 flex flex-1 flex-col">
-          <h3 className="text-lg font-semibold leading-7 text-slate-950">
+        <div className="mt-4 flex flex-1 flex-col">
+          <h3 className="text-xl font-semibold leading-7 tracking-[-0.02em] text-stone-950">
             {title}
           </h3>
 
-          <p className="mt-3 text-sm leading-6 text-slate-600">
-            {short_description}
-          </p>
-
-          <p className="mt-4 text-3xl font-bold tracking-tight text-slate-950">
-            {formattedPrice}
+          <p className="mt-3 text-sm leading-6 text-stone-600">
+            {description}
           </p>
 
           {hasVerifiedRating ? (
-            <div className="mt-4 flex items-center gap-2 text-sm text-slate-600">
-              <span className="text-amber-500" aria-hidden="true">
-                *****
-              </span>
+            <div className="mt-4 flex items-center gap-2 text-sm text-stone-600">
+              <Icon className="size-4 fill-amber-400 text-amber-500" name="star" />
               <span>
-                {rating} ({reviews} avaliacoes)
+                <strong className="font-semibold text-stone-800">{rating}</strong>{" "}
+                ({reviews.toLocaleString("pt-BR")} avaliações)
               </span>
             </div>
           ) : null}
 
-          <ul className="mt-5 space-y-2 text-sm leading-6 text-slate-700">
-            {pros.map((pro) => (
-              <li key={pro} className="flex gap-2">
-                <span className="mt-1 text-teal-700" aria-hidden="true">
-                  +
+          <ul className="mt-5 space-y-2.5 text-sm leading-6 text-stone-700">
+            {benefits.map((benefit) => (
+              <li key={benefit} className="flex gap-2.5">
+                <span className="mt-0.5 grid size-5 shrink-0 place-items-center rounded-full bg-teal-50 text-teal-700">
+                  <Icon className="size-3.5" name="check" />
                 </span>
-                <span>{pro}</span>
+                <span>{benefit}</span>
               </li>
             ))}
           </ul>
 
-          <p className="mt-5 text-sm leading-6 text-slate-700">
-            <span className="font-semibold text-slate-950">Ideal para:</span>{" "}
-            {best_for}
-          </p>
+          <div className="mt-5 rounded-xl bg-[#faf7f0] px-4 py-3 text-sm leading-6 text-stone-700">
+            <span className="font-semibold text-stone-950">Ideal para:</span>{" "}
+            {bestFor}
+          </div>
 
           <a
             href={href}
             target="_blank"
             rel="nofollow sponsored noopener noreferrer"
-            className="mt-6 inline-flex w-full items-center justify-center rounded-md bg-teal-700 px-4 py-3.5 text-sm font-bold text-white shadow-md shadow-teal-900/20 transition duration-200 ease-out hover:-translate-y-0.5 hover:bg-teal-600 hover:shadow-lg hover:shadow-teal-900/25 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+            className="mt-6 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-teal-700 px-4 py-3 text-sm font-bold text-white shadow-sm shadow-teal-950/15 transition hover:bg-emerald-800 focus:outline-none focus:ring-2 focus:ring-teal-600 focus:ring-offset-2"
           >
-            {cta}
+            Ver preço na Amazon
+            <Icon className="size-4" name="external" />
           </a>
-          <p className="mt-2 text-center text-xs leading-5 text-slate-500">
-            Preço pode variar ao longo do dia
+          <p className="mt-2 text-center text-[0.7rem] leading-5 text-stone-500">
+            Preço e disponibilidade podem mudar.
           </p>
         </div>
       </div>

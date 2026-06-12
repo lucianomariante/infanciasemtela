@@ -14,7 +14,7 @@ function parseProductPrice(price: Product["price"]): number {
 
 export function calculateProductScore(product: Product): number {
   const price = parseProductPrice(product.price);
-  const premiumBonus = product.tag.toLowerCase().includes("premium") ? 5 : 0;
+  const premiumBonus = product.badge.toLowerCase().includes("premium") ? 5 : 0;
 
   return (
     product.rating * 20 +

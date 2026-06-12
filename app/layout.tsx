@@ -31,9 +31,9 @@ export default function RootLayout({
       lang="pt-BR"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="flex min-h-full flex-col bg-[#faf7f0]">
         {children}
-        <footer className="shrink-0 border-t border-slate-200 bg-slate-50 px-5 py-4 text-center text-xs leading-5 text-slate-500 sm:px-8">
+        <footer className="shrink-0 border-t border-[#e7dccb] bg-[#f6eee2] px-5 py-5 text-center text-xs leading-5 text-stone-600 sm:px-8">
           Como Associado da Amazon, podemos receber comiss&atilde;o por compras
           qualificadas.
         </footer>
