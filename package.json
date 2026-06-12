@@ -13,6 +13,7 @@
     "generate:pins": "tsx scripts/generate-pins.ts",
     "generate:pin-images": "tsx scripts/generate-pin-images.ts",
     "validate:content": "tsx scripts/validate-content.ts",
+    "check:products": "tsx scripts/check-products.ts",
     "create:page": "tsx scripts/create-page.ts --"
   },
   "dependencies": {

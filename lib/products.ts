@@ -61,7 +61,7 @@ function normalizeProduct(product: ProductSource): Product {
     imageAlt:
       optionalValue(media?.imageAlt) ||
       (imageUrl ? `Foto do produto ${product.title}` : ""),
-    badge: product.badge || product.tag || "",
+    badge: optionalValue(media?.badge) || product.badge || product.tag || "",
     ageRange: optionalValue(media?.ageRange),
     benefits: product.benefits || product.pros || [],
     bestFor: product.bestFor || product.best_for || "",
