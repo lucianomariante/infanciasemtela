@@ -173,10 +173,10 @@ export function EditorialTemplate({
 
                 <article className="rounded-[1.5rem] border border-[#ead8cf] bg-[#fff8f4] p-6">
                   <p className="text-xs font-bold uppercase tracking-[0.2em] text-rose-700">
-                    Pontos de atencao
+                    Pontos de atenção
                   </p>
                   <h2 className="mt-3 text-xl font-semibold tracking-[-0.02em] text-stone-950">
-                    Quando talvez nao valha a pena
+                    Quando talvez não valha a pena
                   </h2>
                   <ul className="mt-4 space-y-3 text-sm leading-6 text-stone-600">
                     {copy.cautionBullets.map((bullet) => (
@@ -239,7 +239,7 @@ export function EditorialTemplate({
             </div>
 
             <p className="mt-7 rounded-lg border border-slate-200 bg-white p-5 text-base leading-7 text-slate-700 shadow-sm shadow-slate-200/60">
-              Em breve adicionaremos opcoes recomendadas para esta pagina.
+              Em breve adicionaremos opções recomendadas para esta página.
             </p>
           </section>
         )}

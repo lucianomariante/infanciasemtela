@@ -2,24 +2,24 @@
 
 ## Onde cada dado fica
 
-- `data/products.json`: titulo, descricao, link afiliado, beneficios, selo e
-  informacoes editoriais.
-- `data/product-media.ts`: ASIN, imagem local, alt text, faixa etaria e
+- `data/products.json`: título, descrição, link afiliado, benefícios, selo e
+  informações editoriais.
+- `data/product-media.ts`: ASIN, imagem local, alt text, faixa etária e
   sobrescrita opcional de selo.
 - `public/images/products/`: arquivos locais das imagens autorizadas.
 - `lib/products.ts`: normaliza os campos antigos e novos para os componentes.
 
-Os links afiliados existentes ficam em `data/products.json`. Nao altere esses
-links ao cadastrar imagem, ASIN ou faixa etaria.
+Os links afiliados existentes ficam em `data/products.json`. Não altere esses
+links ao cadastrar imagem, ASIN ou faixa etária.
 
 ## Fluxo atual sem API Amazon
 
 1. Escolha manualmente o produto na Amazon.
 2. Gere ou copie o link afiliado e cadastre-o em `data/products.json`.
-3. Identifique o ASIN diretamente nas informacoes oficiais do produto.
+3. Identifique o ASIN diretamente nas informações oficiais do produto.
 4. Obtenha uma imagem com uso autorizado e salve-a em
    `public/images/products/`.
-5. Use um nome de arquivo amigavel, por exemplo:
+5. Use um nome de arquivo amigável, por exemplo:
    `brinquedo-montessori-madeira-4-anos.webp`.
 6. Preencha o registro correspondente em `data/product-media.ts`:
    - `asin`
@@ -27,11 +27,11 @@ links ao cadastrar imagem, ASIN ou faixa etaria.
    - `imageAlt`
    - `ageRange`
    - `badge`, somente se precisar sobrescrever o selo editorial
-7. Confirme que o produto existe em `data/products.json` e que o ID e igual nos
+7. Confirme que o produto existe em `data/products.json` e que o ID é igual nos
    dois arquivos.
 8. Rode o projeto com `npm run dev`.
-9. Abra uma pagina que use o produto e valide o card com imagem.
-10. Valide a mesma pagina em viewport mobile.
+9. Abra uma página que use o produto e valide o card com imagem.
+10. Valide a mesma página em viewport mobile.
 
 Exemplo de cadastro em `data/product-media.ts`:
 
@@ -39,24 +39,24 @@ Exemplo de cadastro em `data/product-media.ts`:
 {
   asin: "B0XXXXXXXX",
   imageUrl: "/images/products/brinquedo-montessori-madeira-4-anos.webp",
-  imageAlt: "Brinquedo educativo de madeira para crianca de 4 anos",
+  imageAlt: "Brinquedo educativo de madeira para criança de 4 anos",
   ageRange: "4 anos",
   badge: "Montessori",
 }
 ```
 
-O selo e os beneficios principais normalmente permanecem em
+O selo e os benefícios principais normalmente permanecem em
 `data/products.json`:
 
 ```json
 {
   "id": "prod-exemplo",
   "title": "Nome do produto",
-  "description": "Descricao curta para o card.",
+  "description": "Descrição curta para o card.",
   "amazonUrl": "https://amzn.to/link-afiliado",
-  "badge": "Coordenacao motora",
-  "benefits": ["Beneficio curto", "Outro beneficio"],
-  "bestFor": "perfil de crianca ou familia",
+  "badge": "Coordenação motora",
+  "benefits": ["Benefício curto", "Outro benefício"],
+  "bestFor": "perfil de criança ou família",
   "price": "campo interno opcional",
   "rating": 0,
   "reviews": 0
@@ -65,18 +65,18 @@ O selo e os beneficios principais normalmente permanecem em
 
 ## Regras para imagens de produtos
 
-- Use imagens proprias, autorizadas, fornecidas por parceiros ou com permissao
+- Use imagens próprias, autorizadas, fornecidas por parceiros ou com permissão
   clara de uso.
 - Salve os arquivos em `public/images/products/`.
 - Prefira o formato `.webp`.
-- Use nomes descritivos e sem espacos.
-- Nao use hotlink direto da Amazon.
-- Nao faca scraping nem copie imagens automaticamente.
-- Nao use uma imagem ficticia fingindo representar o produto real.
+- Use nomes descritivos e sem espaços.
+- Não use hotlink direto da Amazon.
+- Não faça scraping nem copie imagens automaticamente.
+- Não use uma imagem fictícia fingindo representar o produto real.
 - Preencha um `imageAlt` curto, objetivo e fiel ao que aparece na imagem.
 - Mantenha o arquivo leve e otimizado.
-- Prefira fundo limpo e produto bem visivel.
-- Para URLs externas autorizadas, configure o dominio explicitamente em
+- Prefira fundo limpo e produto bem visível.
+- Para URLs externas autorizadas, configure o domínio explicitamente em
   `next.config.ts` antes de preencher `imageUrl`.
 
 Quando `imageUrl` estiver vazio, o card mostra o fallback neutro:
@@ -106,10 +106,10 @@ O comando lista:
 - ASIN ausente;
 - `imageUrl` ausente;
 - `imageAlt` ausente;
-- faixa etaria ausente;
-- beneficios ausentes;
+- faixa etária ausente;
+- benefícios ausentes;
 - imagem local apontando para arquivo inexistente;
-- produto usado em pagina mas ausente em `data/products.json`;
+- produto usado em página mas ausente em `data/products.json`;
 - cadastro de mídia sem produto correspondente.
 
-O checklist e informativo e nao bloqueia o build por campos ainda incompletos.
+O checklist é informativo e não bloqueia o build por campos ainda incompletos.

@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: Props) {
   const { slug } = await params;
   const page = getPageBySlug(slug);
 
-  if (!page) {
+  if (!page || page.type !== "bestof") {
     return {
       title: "P\u00e1gina n\u00e3o encontrada",
     };
@@ -28,7 +28,7 @@ export default async function Page({ params }: Props) {
   const { slug } = await params;
   const page = getPageBySlug(slug);
 
-  if (!page) {
+  if (!page || page.type !== "bestof") {
     notFound();
   }
 

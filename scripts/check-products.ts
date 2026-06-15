@@ -136,11 +136,11 @@ function main() {
       const localImagePath = getLocalImagePath(media.imageUrl);
 
       if (localImagePath && !fs.existsSync(localImagePath)) {
-        issues.push(`arquivo local nao existe: ${media.imageUrl}`);
+        issues.push(`arquivo local não existe: ${media.imageUrl}`);
       }
 
       if (!localImagePath && /^https?:\/\//i.test(media.imageUrl)) {
-        issues.push("imageUrl externa: confirme permissao e next.config.ts");
+        issues.push("imageUrl externa: confirme permissão e next.config.ts");
       }
     }
 
@@ -153,12 +153,12 @@ function main() {
     const usages = usagesByProduct.get(product.id) || [];
 
     console.log("");
-    console.log(`- ${product.title || "Produto sem titulo"} [${product.id}]`);
+    console.log(`- ${product.title || "Produto sem título"} [${product.id}]`);
     console.log(
-      `  Paginas: ${
+      `  Páginas: ${
         usages.length > 0
           ? usages.map((usage) => `${usage.label} (${usage.route})`).join("; ")
-          : "nenhuma pagina encontrada"
+          : "nenhuma página encontrada"
       }`,
     );
 
@@ -176,7 +176,7 @@ function main() {
 
   if (unknownReferences.length > 0 || unknownProductIds.length > 0) {
     console.log("");
-    console.log("Referencias de pagina invalidas");
+    console.log("Referências de página inválidas");
 
     for (const reference of unknownReferences) {
       issueCount += 1;
@@ -185,13 +185,13 @@ function main() {
 
     for (const productId of unknownProductIds) {
       issueCount += 1;
-      console.log(`  [pendente] produto nao existe em products.json: ${productId}`);
+      console.log(`  [pendente] produto não existe em products.json: ${productId}`);
     }
   }
 
   if (orphanMediaIds.length > 0) {
     console.log("");
-    console.log("Cadastros de midia sem produto");
+    console.log("Cadastros de mídia sem produto");
 
     for (const productId of orphanMediaIds) {
       issueCount += 1;
@@ -203,9 +203,9 @@ function main() {
   console.log("Resumo");
   console.log(`Produtos cadastrados: ${products.length}`);
   console.log(`Produtos completos: ${completeCount}`);
-  console.log(`Pendencias encontradas: ${issueCount}`);
+  console.log(`Pendências encontradas: ${issueCount}`);
   console.log("");
-  console.log("Checklist informativo: pendencias nao bloqueiam o build.");
+  console.log("Checklist informativo: pendências não bloqueiam o build.");
 }
 
 try {

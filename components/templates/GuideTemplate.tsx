@@ -12,26 +12,26 @@ export function GuideTemplate({ page }: GuideTemplateProps) {
       page={page}
       footerSlot={<LeadMagnet />}
       copy={{
-        heroEyebrow: "Guia pratico",
-        quickSummaryTitle: "Resumo rapido",
+        heroEyebrow: "Guia prático",
+        quickSummaryTitle: "Resumo rápido",
         explainerEyebrow: "O que faz sentido considerar",
         explainerTitle: "O que faz sentido considerar",
         explainerText:
-          "Este guia prioriza brinquedos e opcoes com proposta clara de uso, encaixe melhor na rotina e potencial real de manter a crianca engajada sem complicar demais a escolha.",
+          "Este guia prioriza brinquedos e opções com proposta clara de uso, encaixe melhor na rotina e potencial real de manter a criança engajada sem complicar demais a escolha.",
         ctaEyebrow: "Perfil de leitura",
-        ctaTitle: "Para quem este guia e ideal",
+        ctaTitle: "Para quem este guia é ideal",
         audienceBullets: [
-          "pais buscando uma selecao mais objetiva",
+          "pais buscando uma seleção mais objetiva",
           "quem quer entender melhor o que vale a pena",
-          "quem procura opcoes com uso mais pratico no dia a dia",
+          "quem procura opções com uso mais prático no dia a dia",
         ],
         cautionBullets: [
-          "se a necessidade da crianca for muito especifica",
-          "se voce ja decidiu por um estilo de brinquedo diferente",
-          "se a faixa etaria da pagina nao representa bem o momento da crianca",
+          "se a necessidade da criança for muito específica",
+          "se você já decidiu por um estilo de brinquedo diferente",
+          "se a faixa etária da página não representa bem o momento da criança",
         ],
-        rankingEyebrow: "Opcoes recomendadas",
-        listTitle: "Opcoes em destaque neste guia",
+        rankingEyebrow: "Opções recomendadas",
+        listTitle: "Opções em destaque neste guia",
       }}
     />
   );

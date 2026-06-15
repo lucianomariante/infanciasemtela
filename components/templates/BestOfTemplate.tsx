@@ -209,57 +209,57 @@ export function BestOfTemplate({ page }: BestOfTemplateProps) {
                   Como escolhemos
                 </h2>
                 <p className="mt-4 text-base leading-7 text-stone-600">
-                  Organizamos esta selecao considerando a faixa etaria, a
-                  proposta de brincadeira, as avaliacoes dos usuarios, o
-                  equilibrio entre preco e entrega, e a utilidade no dia a dia
-                  para familias que querem acertar mais na escolha.
+                  Organizamos esta seleção considerando a faixa etária, a
+                  proposta de brincadeira, as avaliações dos usuários, o
+                  equilíbrio entre preço e entrega, e a utilidade no dia a dia
+                  para famílias que querem acertar mais na escolha.
                 </p>
               </article>
 
               <div className="grid gap-5">
                 <article className="rounded-[1.5rem] border border-[#e7dccb] bg-white p-6 shadow-[0_10px_30px_rgba(73,58,39,0.06)]">
                   <p className="text-xs font-bold uppercase tracking-[0.2em] text-teal-700">
-                    Para quem esta lista e ideal
+                    Para quem esta lista é ideal
                   </p>
                   <h2 className="mt-3 text-xl font-semibold tracking-[-0.02em] text-stone-950">
-                    Para quem esta lista e ideal
+                    Para quem esta lista é ideal
                   </h2>
                   <ul className="mt-4 space-y-3 text-sm leading-6 text-stone-600">
                     <li className="flex gap-3">
                       <Icon className="mt-1 size-4 shrink-0 text-teal-700" name="check" />
-                      pais buscando brinquedos mais uteis
+                      pais buscando brinquedos mais úteis
                     </li>
                     <li className="flex gap-3">
                       <Icon className="mt-1 size-4 shrink-0 text-teal-700" name="check" />
-                      quem quer fugir de presentes obvios
+                      quem quer fugir de presentes óbvios
                     </li>
                     <li className="flex gap-3">
                       <Icon className="mt-1 size-4 shrink-0 text-teal-700" name="check" />
-                      quem procura opcoes sem depender de telas
+                      quem procura opções sem depender de telas
                     </li>
                   </ul>
                 </article>
 
                 <article className="rounded-[1.5rem] border border-[#ead8cf] bg-[#fff8f4] p-6">
                   <p className="text-xs font-bold uppercase tracking-[0.2em] text-rose-700">
-                    Quando talvez nao valha a pena
+                    Quando talvez não valha a pena
                   </p>
                   <h2 className="mt-3 text-xl font-semibold tracking-[-0.02em] text-stone-950">
-                    Quando talvez nao valha a pena
+                    Quando talvez não valha a pena
                   </h2>
                   <ul className="mt-4 space-y-3 text-sm leading-6 text-stone-600">
                     <li className="flex gap-3">
                       <span className="text-rose-600">-</span>
-                      se a crianca ja tem muitos brinquedos parecidos
+                      se a criança já tem muitos brinquedos parecidos
                     </li>
                     <li className="flex gap-3">
                       <span className="text-rose-600">-</span>
-                      se o produto exige supervisao maior do que a rotina
+                      se o produto exige supervisão maior do que a rotina
                       permite
                     </li>
                     <li className="flex gap-3">
                       <span className="text-rose-600">-</span>
-                      se a faixa etaria nao combina com a crianca
+                      se a faixa etária não combina com a criança
                     </li>
                   </ul>
                 </article>
@@ -305,7 +305,7 @@ export function BestOfTemplate({ page }: BestOfTemplateProps) {
                   {bestValue ? (
                     <section className="rounded-[1.75rem] border border-[#e7dccb] bg-[#f6eee2]/55 p-3">
                       <p className="px-3 pb-1 pt-2 text-xs font-bold uppercase tracking-[0.2em] text-amber-800">
-                        Melhor custo-beneficio
+                        Melhor custo-benefício
                       </p>
                       <div className="mt-4">
                         <ProductCard
@@ -328,7 +328,7 @@ export function BestOfTemplate({ page }: BestOfTemplateProps) {
                   {premiumChoice ? (
                     <section className="rounded-[1.75rem] border border-blue-100 bg-blue-50/55 p-3">
                       <p className="px-3 pb-1 pt-2 text-xs font-bold uppercase tracking-[0.2em] text-blue-800">
-                        Melhor opcao premium
+                        Melhor opção premium
                       </p>
                       <div className="mt-4">
                         <ProductCard
@@ -386,18 +386,18 @@ export function BestOfTemplate({ page }: BestOfTemplateProps) {
           >
             <div className="max-w-3xl">
               <p className="text-sm font-semibold uppercase tracking-[0.18em] text-teal-700">
-                Melhores opcoes
+                Melhores opções
               </p>
               <h2
                 id="best-options-title"
                 className="mt-2 text-2xl font-semibold tracking-tight text-slate-950 sm:text-3xl"
               >
-                Melhores opcoes para esta idade
+                Melhores opções para esta idade
               </h2>
             </div>
 
             <p className="mt-7 rounded-lg border border-slate-200 bg-white p-5 text-base leading-7 text-slate-700 shadow-sm shadow-slate-200/60">
-              Em breve adicionaremos as melhores opcoes para esta pagina.
+              Em breve adicionaremos as melhores opções para esta página.
             </p>
           </section>
         )}

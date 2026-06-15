@@ -16,10 +16,23 @@ function getPagePath(page: ContentPage): string {
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return getAllPages().map((page) => ({
-    url: `${SITE_URL}${getPagePath(page)}`,
-    lastModified: new Date(),
-    changeFrequency: "weekly",
-    priority: page.type === "bestof" ? 0.9 : 0.8,
-  }));
+  const lastModified = new Date();
+  const contentPages: MetadataRoute.Sitemap = getAllPages()
+    .map<MetadataRoute.Sitemap[number]>((page) => ({
+      url: `${SITE_URL}${getPagePath(page)}`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    }))
+    .sort((a, b) => a.url.localeCompare(b.url));
+
+  return [
+    {
+      url: SITE_URL,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 1,
+    },
+    ...contentPages,
+  ];
 }

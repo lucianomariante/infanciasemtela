@@ -47,7 +47,7 @@ export function generateBreadcrumbSchema(
       {
         "@type": "ListItem",
         position: 1,
-        name: "Inicio",
+        name: "Início",
         item: SITE_URL,
       },
       {

@@ -160,11 +160,11 @@ function normalizeGeneratedContent(content: GeneratedContent): GeneratedContent 
 
 function buildSystemPrompt() {
   return [
-    "Voce escreve conteudo editorial para o projeto Guia Sem Tela.",
-    "O publico sao pais, maes e familiares que querem escolher brinquedos, presentes infantis e brincadeiras sem tela.",
+    "Você escreve conteúdo editorial para o projeto Guia Sem Tela.",
+    "O público são pais, mães e familiares que querem escolher brinquedos, presentes infantis e brincadeiras sem tela.",
     "O tom deve ser confiavel, simples, util, especifico e sem exagero.",
     "Escreva para SEO de forma natural, sem keyword stuffing.",
-    "Nao faca promessas medicas, terapeuticas ou de desenvolvimento garantido.",
+    "Não faça promessas médicas, terapêuticas ou de desenvolvimento garantido.",
     "Evite afirmacoes absolutas e prefira linguagem cuidadosa.",
     "O foco principal e ajudar na decisao de compra.",
   ].join("\n");
@@ -172,13 +172,13 @@ function buildSystemPrompt() {
 
 function buildUserPrompt(page: ContentPage, emptyFields: FillableField[]) {
   return [
-    "Preencha apenas conteudo editorial para os campos vazios indicados.",
+    "Preencha apenas conteúdo editorial para os campos vazios indicados.",
     "Retorne JSON puro exatamente com as chaves: intro, secondary_keywords, page_goal, recommended_blocks, faq.",
-    "Mesmo que algum campo nao esteja vazio, retorne todas as chaves no JSON; o script so usara os campos vazios.",
+    "Mesmo que algum campo não esteja vazio, retorne todas as chaves no JSON; o script só usará os campos vazios.",
     "",
     `Campos vazios a preencher: ${emptyFields.join(", ")}`,
     "",
-    "Pagina:",
+    "Página:",
     JSON.stringify(
       {
         slug: page.slug,
@@ -197,7 +197,7 @@ function buildUserPrompt(page: ContentPage, emptyFields: FillableField[]) {
       {
         intro: "texto curto",
         secondary_keywords: ["termo relacionado"],
-        page_goal: "objetivo editorial e comercial da pagina",
+        page_goal: "objetivo editorial e comercial da página",
         recommended_blocks: ["hero", "product-list", "faq"],
         faq: [
           {

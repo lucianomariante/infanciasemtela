@@ -55,16 +55,16 @@ export default function AdminPage() {
             Admin
           </p>
           <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">
-            Diagnostico editorial
+            Diagnóstico editorial
           </h1>
           <p className="max-w-2xl text-sm leading-6 text-zinc-600 sm:text-base">
-            Visao geral das paginas publicadas no conteudo do projeto.
+            Visão geral das páginas publicadas no conteúdo do projeto.
           </p>
         </header>
 
         <section
           className="grid gap-3 sm:grid-cols-2 lg:grid-cols-5"
-          aria-label="Resumo de paginas"
+          aria-label="Resumo de páginas"
         >
           <div className="rounded-lg border border-zinc-200 bg-white p-5 shadow-sm">
             <p className="text-sm font-medium text-zinc-500">Total</p>
@@ -88,7 +88,7 @@ export default function AdminPage() {
 
         <section className="overflow-hidden rounded-lg border border-zinc-200 bg-white shadow-sm">
           <div className="border-b border-zinc-200 px-5 py-4">
-            <h2 className="text-lg font-semibold">Paginas</h2>
+            <h2 className="text-lg font-semibold">Páginas</h2>
           </div>
 
           <div className="overflow-x-auto">
@@ -104,7 +104,7 @@ export default function AdminPage() {
                   <th className="whitespace-nowrap px-5 py-3 text-right">
                     FAQ
                   </th>
-                  <th className="whitespace-nowrap px-5 py-3">Link publico</th>
+                  <th className="whitespace-nowrap px-5 py-3">Link público</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-zinc-100">

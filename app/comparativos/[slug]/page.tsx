@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: Props) {
 
   if (!page || page.type !== "comparative") {
     return {
-      title: "Pagina nao encontrada",
+      title: "Página não encontrada",
     };
   }
 

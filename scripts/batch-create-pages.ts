@@ -149,11 +149,11 @@ function validateGeneratedContent(content: GeneratedContent) {
 
 function buildSystemPrompt() {
   return [
-    "Voce escreve conteudo editorial para o projeto Guia Sem Tela.",
-    "O publico sao pais, maes e familiares que querem escolher brinquedos, presentes infantis e brincadeiras sem tela.",
+    "Você escreve conteúdo editorial para o projeto Guia Sem Tela.",
+    "O público são pais, mães e familiares que querem escolher brinquedos, presentes infantis e brincadeiras sem tela.",
     "O tom deve ser confiavel, simples, util, especifico e sem exagero.",
     "Escreva para SEO de forma natural, sem keyword stuffing.",
-    "Nao faca promessas medicas, terapeuticas ou de desenvolvimento garantido.",
+    "Não faça promessas médicas, terapêuticas ou de desenvolvimento garantido.",
     "Evite afirmacoes absolutas e prefira linguagem cuidadosa.",
     "O foco principal e ajudar na decisao de compra.",
   ].join("\n");
@@ -161,11 +161,11 @@ function buildSystemPrompt() {
 
 function buildUserPrompt(page: ContentPage) {
   return [
-    "Gere conteudo editorial complementar para a pagina abaixo.",
+    "Gere conteúdo editorial complementar para a página abaixo.",
     "Retorne JSON puro exatamente com as chaves: intro, secondary_keywords, page_goal, recommended_blocks, faq.",
-    "A intro ja existe e nao sera sobrescrita, mas retorne uma intro coerente para manter o formato.",
+    "A intro já existe e não será sobrescrita, mas retorne uma intro coerente para manter o formato.",
     "",
-    "Pagina:",
+    "Página:",
     JSON.stringify(
       {
         slug: page.slug,
@@ -184,7 +184,7 @@ function buildUserPrompt(page: ContentPage) {
       {
         intro: "texto curto",
         secondary_keywords: ["termo relacionado"],
-        page_goal: "objetivo editorial e comercial da pagina",
+        page_goal: "objetivo editorial e comercial da página",
         recommended_blocks: ["hero", "product-list", "faq"],
         faq: [
           {

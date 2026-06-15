@@ -14,11 +14,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Infancia Sem Tela",
-    template: "%s | Infancia Sem Tela",
+    default: "Infância Sem Tela",
+    template: "%s | Infância Sem Tela",
   },
   description:
-    "Guias praticos para escolher brinquedos, presentes e ideias sem tela para criancas.",
+    "Guias práticos para escolher brinquedos, presentes e ideias sem tela para crianças.",
 };
 
 export default function RootLayout({
