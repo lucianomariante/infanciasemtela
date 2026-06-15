@@ -1,19 +1,7 @@
 import type { MetadataRoute } from "next";
-import { getAllPages, type ContentPage } from "@/lib/content";
+import { getAllPages } from "@/lib/content";
+import { getPagePath } from "@/lib/schema";
 import { SITE_URL } from "@/lib/site";
-
-function getPagePath(page: ContentPage): string {
-  switch (page.type) {
-    case "bestof":
-      return `/melhores/${page.slug}`;
-    case "gift":
-      return `/presentes/${page.slug}`;
-    case "guide":
-      return `/guias/${page.slug}`;
-    case "comparative":
-      return `/comparativos/${page.slug}`;
-  }
-}
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();

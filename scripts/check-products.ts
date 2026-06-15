@@ -36,8 +36,11 @@ function hasText(value: unknown): value is string {
 }
 
 function getPageRoute(page: ContentPage): string {
+  if (page.type === "bestof") {
+    return `/${page.slug || "slug-ausente"}`;
+  }
+
   const sections = {
-    bestof: "melhores",
     comparative: "comparativos",
     gift: "presentes",
     guide: "guias",

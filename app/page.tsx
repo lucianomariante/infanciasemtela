@@ -11,21 +11,21 @@ export const metadata: Metadata = {
 
 const featuredGuides = [
   {
-    href: "/melhores/melhor-brinquedo-para-3-anos",
+    href: "/melhor-brinquedo-para-3-anos",
     title: "Melhor brinquedo para 3 anos",
     description:
       "Opções para estimular imaginação, autonomia e coordenação motora.",
     icon: "blocks" as const,
   },
   {
-    href: "/melhores/melhor-brinquedo-para-4-anos",
+    href: "/melhor-brinquedo-para-4-anos",
     title: "Melhor brinquedo para 4 anos",
     description:
       "Escolhas equilibradas para brincar mais tempo sem depender de telas.",
     icon: "puzzle" as const,
   },
   {
-    href: "/melhores/melhor-brinquedo-para-5-anos",
+    href: "/melhor-brinquedo-para-5-anos",
     title: "Melhor brinquedo para 5 anos",
     description:
       "Ideias para a fase de criatividade, desafios simples e brincadeira ativa.",

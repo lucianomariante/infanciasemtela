@@ -7,7 +7,7 @@ type JsonLd = Record<string, unknown>;
 export function getPagePath(page: ContentPage): string {
   switch (page.type) {
     case "bestof":
-      return `/melhores/${page.slug}`;
+      return `/${page.slug}`;
     case "gift":
       return `/presentes/${page.slug}`;
     case "guide":
@@ -40,6 +40,27 @@ export function generateBreadcrumbSchema(
   page: ContentPage,
   path: string,
 ): JsonLd {
+  if (page.type === "bestof") {
+    return {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Início",
+          item: SITE_URL,
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: page.h1,
+          item: `${SITE_URL}${path}`,
+        },
+      ],
+    };
+  }
+
   return {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -132,27 +153,27 @@ export function generateItemListSchema(
 
 function getBreadcrumbSectionName(page: ContentPage): string {
   switch (page.type) {
-    case "bestof":
-      return "Melhores";
     case "gift":
       return "Presentes";
     case "guide":
       return "Guias";
     case "comparative":
       return "Comparativos";
+    case "bestof":
+      return "Guias de compra";
   }
 }
 
 function getSectionPath(page: ContentPage): string {
   switch (page.type) {
-    case "bestof":
-      return "/melhores";
     case "gift":
       return "/presentes";
     case "guide":
       return "/guias";
     case "comparative":
       return "/comparativos";
+    case "bestof":
+      return "/";
   }
 }
 

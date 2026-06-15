@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { getAllPages, type ContentPage, type PageType } from "@/lib/content";
+import { getAllPages, type PageType } from "@/lib/content";
+import { getPagePath } from "@/lib/schema";
 
 const PAGE_TYPES: PageType[] = ["bestof", "gift", "guide", "comparative"];
 
@@ -9,19 +10,6 @@ const TYPE_LABELS: Record<PageType, string> = {
   guide: "Guide",
   comparative: "Comparative",
 };
-
-function getPublicPath(page: ContentPage): string {
-  switch (page.type) {
-    case "bestof":
-      return `/melhores/${page.slug}`;
-    case "gift":
-      return `/presentes/${page.slug}`;
-    case "guide":
-      return `/guias/${page.slug}`;
-    case "comparative":
-      return `/comparativos/${page.slug}`;
-  }
-}
 
 export default function AdminPage() {
   const pages = getAllPages().sort((a, b) => {
@@ -109,7 +97,7 @@ export default function AdminPage() {
               </thead>
               <tbody className="divide-y divide-zinc-100">
                 {pages.map((page) => {
-                  const publicPath = getPublicPath(page);
+                  const publicPath = getPagePath(page);
 
                   return (
                     <tr key={`${page.type}-${page.slug}`}>

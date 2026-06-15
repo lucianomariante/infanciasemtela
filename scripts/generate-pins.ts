@@ -29,7 +29,7 @@ const pagesDirectory = path.join(process.cwd(), "content", "pages");
 const pinsDirectory = path.join(process.cwd(), "content", "pins");
 
 const typeToPathPrefix: Record<PageType, string> = {
-  bestof: "/melhores",
+  bestof: "",
   gift: "/presentes",
   guide: "/guias",
   comparative: "/comparativos",
