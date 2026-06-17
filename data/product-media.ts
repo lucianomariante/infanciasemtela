@@ -34,18 +34,20 @@ export type ProductMedia = {
  */
 export const productMedia = {
   "prod-laboratorio-show-da-luna": {
-    asin: "",
-    ageRange: "",
-    badge: "",
-    imageUrl: "",
-    imageAlt: "",
+    asin: "B0BXFQMJPM",
+    ageRange: "5 anos ou mais",
+    badge: "Criatividade",
+    imageUrl: "/images/products/laboratorio-criativo-luna.webp",
+    imageAlt:
+      "Laboratório Criativo Show da Luna kit de experiências científicas para crianças",
   },
   "prod-mesinha-didatica": {
-    asin: "",
-    ageRange: "",
-    badge: "",
-    imageUrl: "",
-    imageAlt: "",
+    asin: "B089DNCHBY",
+    ageRange: "2 a 5 anos",
+    badge: "Coordenação",
+    imageUrl: "/images/products/mesinha-didatica-infantil-atividades.webp",
+    imageAlt:
+      "Mesinha didática infantil com atividades e peças coloridas para crianças pequenas",
   },
   "prod-girafa-didatica-mercotoys": {
     asin: "",
@@ -55,25 +57,27 @@ export const productMedia = {
     imageAlt: "",
   },
   "prod-cubo-didatico-mercotoys": {
-    asin: "",
-    ageRange: "",
-    badge: "",
-    imageUrl: "",
-    imageAlt: "",
+    asin: "B07CSD9XHZ",
+    ageRange: "2 a 5 anos",
+    badge: "Encaixe",
+    imageUrl: "/images/products/mercotoys-cubo-didatico-educativo.webp",
+    imageAlt:
+      "Cubo didático educativo Mercotoys com formas e atividades para crianças pequenas",
   },
   "prod-box-block-dismat": {
-    asin: "",
-    ageRange: "",
-    badge: "",
-    imageUrl: "",
-    imageAlt: "",
+    asin: "B07FK2ST8Z",
+    ageRange: "3 a 5 anos",
+    badge: "Criatividade",
+    imageUrl: "/images/products/box-block-dismat-brinquedo-montar.webp",
+    imageAlt: "Box Block Dismat brinquedo de montar colorido para crianças",
   },
   "prod-giro-magico-dismat": {
-    asin: "",
-    ageRange: "",
-    badge: "",
-    imageUrl: "",
-    imageAlt: "",
+    asin: "B07RRXQJYN",
+    ageRange: "12 meses a 8 anos",
+    badge: "Coordenação",
+    imageUrl: "/images/products/giro-magico-dismat-viva-brincar.webp",
+    imageAlt:
+      "Giro Mágico Infantil Dismat com engrenagens coloridas para estimular coordenação motora",
   },
   "prod-fisher-price-torre-potinhos": {
     asin: "",

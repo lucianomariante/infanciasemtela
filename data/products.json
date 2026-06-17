@@ -7,7 +7,7 @@
     "reviews": 324,
     "tag": "Melhor geral",
     "image": "/images/product-placeholder.png",
-    "affiliate_url": "https://amzn.to/3PIx56A",
+    "affiliate_url": "https://www.amazon.com.br/Laborat%C3%B3rio-Criativo-Infantil-Experimentos-Divertidos/dp/B0BXFQMJPM?tag=infanciasem08-20",
     "pros": [
       "Boa proposta criativa",
       "Estimula curiosidade",
@@ -24,7 +24,7 @@
     "reviews": 13000,
     "tag": "Custo-benefício",
     "image": "/images/product-placeholder.png",
-    "affiliate_url": "https://amzn.to/4nOF3aG",
+    "affiliate_url": "https://www.amazon.com.br/MESINHA-DIDATICA-INFANTIL-COM-ATIVIDADES/dp/B089DNCHBY?tag=infanciasem08-20",
     "pros": [
       "Preço acessível",
       "Muitas avaliações",
@@ -53,19 +53,20 @@
   {
     "id": "prod-cubo-didatico-mercotoys",
     "title": "Mercotoys Cubo Didático Educativo",
-    "price": "R$ 37,90",
+    "price": "Consultar preço",
     "rating": 4.9,
     "reviews": 708,
     "tag": "Bom para coordenação",
     "image": "/images/product-placeholder.png",
-    "affiliate_url": "https://amzn.to/4dAwSvu",
+    "affiliate_url": "https://www.amazon.com.br/Brinquedo-Educativo-Did%C3%A1tico-Merco-Toys/dp/B07CSD9XHZ?tag=infanciasem08-20",
     "pros": [
-      "Estimula encaixe e coordenação",
-      "Preço competitivo",
-      "Boa quantidade de avaliações"
+      "Estimula coordenação motora",
+      "Trabalha encaixe e percepção de formas",
+      "Ajuda no raciocínio lógico",
+      "Boa opção para brincar sem telas"
     ],
-    "best_for": "crianças que gostam de encaixar, girar e explorar formas",
-    "short_description": "Cubo educativo com proposta de encaixe e exploração manual."
+    "best_for": "crianças pequenas que gostam de encaixar peças, explorar formas e brincar com atividades manuais",
+    "short_description": "Cubo didático educativo com formas e atividades para estimular coordenação motora, encaixe e raciocínio lógico sem telas."
   },
   {
     "id": "prod-box-block-dismat",
@@ -75,7 +76,7 @@
     "reviews": 230,
     "tag": "Bom para montar",
     "image": "/images/product-placeholder.png",
-    "affiliate_url": "https://amzn.to/4wXfBEo",
+    "affiliate_url": "https://www.amazon.com.br/Brinquedo-Montar-Block-Dismat-Multicor/dp/B07FK2ST8Z?tag=infanciasem08-20",
     "pros": [
       "Estimula construção",
       "Boa nota média",
@@ -86,20 +87,21 @@
   },
   {
     "id": "prod-giro-magico-dismat",
-    "title": "Giro Mágico Dismat",
-    "price": "R$ 55,90",
+    "title": "Giro Mágico Infantil Viva Brincar 8 Peças Dismat",
+    "price": "Consultar preço",
     "rating": 4.9,
     "reviews": 11000,
     "tag": "Mais popular",
     "image": "/images/product-placeholder.png",
-    "affiliate_url": "https://amzn.to/3Q52y2X",
+    "affiliate_url": "https://www.amazon.com.br/Brinquedo-Educativo-Magico-Dismat-Multicor/dp/B07RRXQJYN?tag=infanciasem08-20",
     "pros": [
-      "Altíssimo volume de avaliações",
-      "Boa aceitação",
-      "Preço intermediário"
+      "Estimula coordenação motora",
+      "Ajuda no foco e na concentração",
+      "Incentiva a criatividade",
+      "Boa opção para brincar sem telas"
     ],
-    "best_for": "quem quer uma escolha popular e segura",
-    "short_description": "Brinquedo popular com alto volume de avaliações e boa aceitação entre compradores."
+    "best_for": "crianças que gostam de brinquedos de movimento, encaixe e engrenagens coloridas para explorar com as mãos",
+    "short_description": "Brinquedo sem tela com eixo e engrenagens coloridas para estimular coordenação motora, foco, concentração e criatividade."
   },
   {
     "id": "prod-fisher-price-torre-potinhos",

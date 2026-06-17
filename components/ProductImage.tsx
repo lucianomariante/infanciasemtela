@@ -17,20 +17,35 @@ export function ProductImage({
   if (!imageUrl) {
     return (
       <div
-        className={`relative isolate flex aspect-[4/3] items-center justify-center overflow-hidden bg-[linear-gradient(145deg,#f7ead8,#eef5ef)] ${className}`}
+        className={`relative isolate flex aspect-[4/3] min-h-52 items-center justify-center overflow-hidden border-b border-[#eadfce] bg-[linear-gradient(145deg,#fbf5e9_0%,#f2f7f2_52%,#edf4f7_100%)] px-5 py-7 sm:min-h-56 sm:px-7 ${className}`}
         role="img"
-        aria-label={`Imagem do produto ${title} ainda não disponível`}
+        aria-label={`Imagem do produto ${title} em breve. Veja detalhes na Amazon.`}
       >
-        <span className="absolute -left-8 -top-8 size-28 rounded-full bg-[#fde2d1]/80" />
-        <span className="absolute -bottom-10 -right-6 size-32 rounded-full bg-[#dbeafe]/70" />
-        <span className="absolute right-8 top-8 size-10 rotate-12 rounded-lg bg-[#eadcc8]" />
-        <div className="relative flex flex-col items-center gap-3 text-center text-teal-800">
-          <span className="grid size-16 place-items-center rounded-2xl bg-white/80 shadow-sm ring-1 ring-white">
-            <Icon className="size-8" name="blocks" />
-          </span>
-          <span className="rounded-full bg-white/75 px-3 py-1 text-[0.65rem] font-bold uppercase tracking-[0.16em] text-stone-600">
+        <span className="absolute -left-12 -top-14 size-40 rounded-full bg-[#f5dcca]/65 blur-sm" />
+        <span className="absolute -bottom-16 -right-10 size-44 rounded-full bg-[#d7e9e5]/75 blur-sm" />
+        <span className="absolute left-[14%] top-[18%] size-8 -rotate-12 rounded-lg border border-white/80 bg-[#f5cdb7]/70 shadow-sm" />
+        <span className="absolute bottom-[16%] right-[13%] size-10 rotate-12 rounded-full border border-white/80 bg-[#cfe2ef]/75 shadow-sm" />
+
+        <div className="relative w-full max-w-xs rounded-[1.4rem] border border-white/90 bg-white/72 px-5 py-5 text-center shadow-[0_16px_40px_rgba(73,58,39,0.08)] backdrop-blur-sm sm:px-6 sm:py-6">
+          <div className="mx-auto flex w-fit items-end gap-1.5 text-teal-700">
+            <span className="grid size-11 place-items-center rounded-xl bg-[#e5f1ed] shadow-sm ring-1 ring-teal-900/5">
+              <Icon className="size-6" name="blocks" />
+            </span>
+            <span className="grid size-8 place-items-center rounded-lg bg-[#f8e9d5] text-amber-800 shadow-sm ring-1 ring-amber-900/5">
+              <Icon className="size-4" name="puzzle" />
+            </span>
+            <span className="grid size-9 place-items-center rounded-xl bg-[#e8eef7] text-blue-700 shadow-sm ring-1 ring-blue-900/5">
+              <Icon className="size-4" name="gift" />
+            </span>
+          </div>
+
+          <p className="mt-4 text-sm font-bold tracking-[-0.01em] text-stone-800 sm:text-[0.95rem]">
             Imagem do produto em breve
-          </span>
+          </p>
+          <p className="mt-1.5 text-xs leading-5 text-stone-500">
+            Veja detalhes na Amazon
+          </p>
+          <span className="mx-auto mt-4 block h-1 w-12 rounded-full bg-teal-600/70" />
         </div>
       </div>
     );

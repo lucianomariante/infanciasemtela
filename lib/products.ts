@@ -1,3 +1,5 @@
+import fs from "fs";
+import path from "path";
 import products from "@/data/products.json";
 import { productMedia } from "@/data/product-media";
 import { calculateProductScore } from "@/lib/scoring";
@@ -47,9 +49,27 @@ function optionalValue(value: string | undefined): string | undefined {
   return normalized ? normalized : undefined;
 }
 
+function getAvailableImageUrl(
+  imageUrl: string | undefined,
+): string | undefined {
+  const normalized = optionalValue(imageUrl);
+
+  if (!normalized || !normalized.startsWith("/")) {
+    return normalized;
+  }
+
+  const publicPath = path.join(
+    process.cwd(),
+    "public",
+    normalized.replace(/^\/+/, ""),
+  );
+
+  return fs.existsSync(publicPath) ? normalized : undefined;
+}
+
 function normalizeProduct(product: ProductSource): Product {
   const media = productMedia[product.id as keyof typeof productMedia];
-  const imageUrl = optionalValue(media?.imageUrl);
+  const imageUrl = getAvailableImageUrl(media?.imageUrl);
 
   return {
     id: product.id,
