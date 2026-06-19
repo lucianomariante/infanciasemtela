@@ -88,11 +88,12 @@ export const productMedia = {
     imageAlt: "",
   },
   "prod-formas-magicas-babebi": {
-    asin: "",
-    ageRange: "",
-    badge: "",
-    imageUrl: "",
-    imageAlt: "",
+    asin: "B08YGSVTPJ",
+    ageRange: "3 anos ou mais",
+    badge: "Encaixe",
+    imageUrl: "/images/products/formas-magicas-babebi-6066.webp",
+    imageAlt:
+      "Brinquedo educativo de madeira Formas Mágicas Babebi com peças coloridas de encaixe para crianças",
   },
   "prod-busy-board-montessori": {
     asin: "",
