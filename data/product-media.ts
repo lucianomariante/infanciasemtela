@@ -50,11 +50,12 @@ export const productMedia = {
       "Mesinha didática infantil com atividades e peças coloridas para crianças pequenas",
   },
   "prod-girafa-didatica-mercotoys": {
-    asin: "",
-    ageRange: "",
-    badge: "",
-    imageUrl: "",
-    imageAlt: "",
+    asin: "B07FKG4DKG",
+    ageRange: "2 a 5 anos",
+    badge: "Coordenação",
+    imageUrl: "/images/products/girafa-didatica-mercotoys.webp",
+    imageAlt:
+      "Girafa didática Mercotoys brinquedo educativo com atividades para crianças pequenas",
   },
   "prod-cubo-didatico-mercotoys": {
     asin: "B07CSD9XHZ",
@@ -75,7 +76,7 @@ export const productMedia = {
     asin: "B07RRXQJYN",
     ageRange: "12 meses a 8 anos",
     badge: "Coordenação",
-    imageUrl: "/images/products/giro-magico-dismat-viva-brincar.webp",
+    imageUrl: "/images/products/giro-magico-dismat-viva-brincar.png",
     imageAlt:
       "Giro Mágico Infantil Dismat com engrenagens coloridas para estimular coordenação motora",
   },

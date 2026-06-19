@@ -36,19 +36,20 @@
   {
     "id": "prod-girafa-didatica-mercotoys",
     "title": "Girafa Didática Mercotoys",
-    "price": "R$ 31,99",
+    "price": "Consultar preço",
     "rating": 4.9,
     "reviews": 318,
     "tag": "Mais barato",
     "image": "/images/product-placeholder.png",
-    "affiliate_url": "https://amzn.to/3RwAJkt",
+    "affiliate_url": "https://www.amazon.com.br/Brinquedo-Educativo-Did%C3%A1tica-Merco-Toys/dp/B07FKG4DKG?tag=infanciasem08-20",
     "pros": [
-      "Preço baixo",
-      "Boa nota média",
-      "Marca conhecida em brinquedos infantis"
+      "Estimula coordenação motora",
+      "Trabalha percepção de formas e cores",
+      "Incentiva exploração manual",
+      "Boa opção para brincar sem telas"
     ],
-    "best_for": "quem quer um brinquedo simples e barato para presentear",
-    "short_description": "Brinquedo didático simples, leve e acessível para crianças pequenas."
+    "best_for": "Crianças pequenas que gostam de brinquedos coloridos com atividades manuais, encaixes e movimentos.",
+    "short_description": "Brinquedo didático com atividades manuais para estimular coordenação motora, percepção de cores e formas e brincadeira sem tela."
   },
   {
     "id": "prod-cubo-didatico-mercotoys",
