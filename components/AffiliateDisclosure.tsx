@@ -7,8 +7,9 @@ export function AffiliateDisclosure() {
         <Icon className="size-4" name="shield" />
       </span>
       <p>
-        Alguns links desta página podem gerar comissão para o Guia Sem Tela,
-        sem custo adicional para você.
+        Alguns links desta página podem gerar comissão para o Infância Sem
+        Tela, sem custo adicional para você. A comissão não altera nossos
+        critérios de seleção.
       </p>
     </aside>
   );

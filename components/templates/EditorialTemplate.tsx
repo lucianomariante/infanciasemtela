@@ -1,7 +1,9 @@
 import Link from "next/link";
 import { AffiliateDisclosure } from "@/components/AffiliateDisclosure";
+import { EditorialTrustBar } from "@/components/EditorialTrustBar";
 import { FAQ } from "@/components/FAQ";
 import { InternalLinks } from "@/components/InternalLinks";
+import { PageEditorialSections } from "@/components/PageEditorialSections";
 import { ProductCard } from "@/components/ProductCard";
 import { QuickSummaryCard } from "@/components/QuickSummaryCard";
 import { Icon } from "@/components/ui/Icon";
@@ -10,6 +12,7 @@ import type { ContentPage } from "@/lib/content";
 import { getCombinedInternalLinks } from "@/lib/internal-links";
 import { getProductsByIds } from "@/lib/products";
 import {
+  generateArticleSchema,
   generateBreadcrumbSchema,
   generateFAQSchema,
   generateItemListSchema,
@@ -48,6 +51,7 @@ export function EditorialTemplate({
   const internalLinks = getCombinedInternalLinks(page);
   const path = getPagePath(page);
   const schemas = [
+    generateArticleSchema(page),
     generateFAQSchema(page),
     generateBreadcrumbSchema(page, path),
     generateItemListSchema(page, products),
@@ -67,6 +71,7 @@ export function EditorialTemplate({
         ))}
 
         <AffiliateDisclosure />
+        <EditorialTrustBar />
 
         <section className="relative mt-8 overflow-hidden rounded-[2rem] border border-[#e7dccb] bg-white px-6 py-9 shadow-[0_18px_55px_rgba(73,58,39,0.08)] sm:mt-10 sm:px-10 sm:py-12 lg:grid lg:grid-cols-[1fr_0.34fr] lg:gap-10">
           <div className="relative z-10">
@@ -98,6 +103,8 @@ export function EditorialTemplate({
           </aside>
           <span className="absolute -right-16 -top-16 size-48 rounded-full bg-[#dbeafe]/55" />
         </section>
+
+        <PageEditorialSections sections={page.editorial_sections} />
 
         {products.length > 0 ? (
           <>
@@ -238,9 +245,14 @@ export function EditorialTemplate({
               </h2>
             </div>
 
-            <p className="mt-7 rounded-lg border border-slate-200 bg-white p-5 text-base leading-7 text-slate-700 shadow-sm shadow-slate-200/60">
-              Em breve adicionaremos opções recomendadas para esta página.
-            </p>
+            <div className="mt-7 rounded-lg border border-amber-200 bg-amber-50 p-5 text-base leading-7 text-stone-700">
+              <p className="font-semibold text-stone-900">Seleção em revisão editorial</p>
+              <p className="mt-2">
+                Ainda não há produtos confirmados para esta página. Use as
+                orientações acima como ponto de partida e confira faixa etária,
+                materiais, tamanho das peças e supervisão indicada pelo fabricante.
+              </p>
+            </div>
           </section>
         )}
 

@@ -20,6 +20,28 @@
     "faq",
     "internal-links"
   ],
+  "editorial_sections": [
+    {
+      "title": "Sem tela não precisa significar sem ajuda do adulto",
+      "paragraphs": [
+        "Um brinquedo não substitui automaticamente o celular. Para ganhar espaço na rotina, ele precisa estar acessível, ser apresentado em um momento possível e ter uma proposta que a criança consiga iniciar.",
+        "Nos primeiros usos, alguns minutos de presença adulta podem ajudar mais do que comprar outro produto. Depois que a brincadeira ganha um caminho conhecido, a criança pode retomá-la com mais autonomia."
+      ],
+      "bullets": [
+        "deixe poucas opções visíveis por vez",
+        "mostre uma possibilidade sem controlar toda a brincadeira",
+        "alterne os brinquedos em vez de expor tudo sempre",
+        "considere energia, fome e cansaço do momento"
+      ]
+    },
+    {
+      "title": "Escolha pelo tipo de brincadeira, não pelo rótulo educativo",
+      "paragraphs": [
+        "O termo educativo é amplo e não garante que o brinquedo combine com a criança. Observe a ação principal: montar, desenhar, equilibrar, encaixar, imaginar, movimentar o corpo ou jogar em turnos.",
+        "Ter categorias diferentes costuma ser mais útil do que acumular muitas versões da mesma proposta. Uma pequena seleção variada pode atender momentos de energia, concentração, companhia e brincadeira independente."
+      ]
+    }
+  ],
   "product_ids": [
     "prod-mesinha-didatica",
     "prod-giro-magico-dismat",

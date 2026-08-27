@@ -21,6 +21,28 @@
     "faq",
     "internal-links"
   ],
+  "editorial_sections": [
+    {
+      "title": "Brinquedos que acompanham a fase dos 4 anos",
+      "paragraphs": [
+        "Nessa fase, muitas crianças passam a sustentar histórias de faz de conta por mais tempo, planejar construções simples e insistir em desafios que antes abandonavam rapidamente. Isso torna interessantes os brinquedos que permitem criar um objetivo próprio, em vez de oferecer apenas uma resposta certa.",
+        "A melhor escolha não precisa trabalhar todas as habilidades ao mesmo tempo. É mais útil decidir qual experiência você quer favorecer agora: movimento, construção, imaginação, desenho, jogo compartilhado ou um momento mais tranquilo."
+      ],
+      "bullets": [
+        "construção com mais de um resultado possível",
+        "faz de conta ligado aos interesses da criança",
+        "desafio curto com dificuldade progressiva",
+        "atividade que possa ser retomada em outro dia"
+      ]
+    },
+    {
+      "title": "Um filtro prático antes de comprar",
+      "paragraphs": [
+        "Imagine os primeiros cinco minutos de uso: a criança saberá por onde começar? Depois imagine a quinta vez: haverá algo novo para tentar? Essas duas perguntas ajudam a separar novidade passageira de brinquedos com potencial de uso recorrente.",
+        "Também vale conferir se o tamanho do brinquedo cabe no espaço disponível e se a quantidade de peças combina com a organização da casa. Um bom produto que vira fonte constante de conflito pode não ser uma boa compra para aquela rotina."
+      ]
+    }
+  ],
   "product_ids": [
     "prod-mesinha-didatica",
     "prod-giro-magico-dismat",
@@ -48,6 +70,6 @@
   "internal_links": [
     "/melhor-brinquedo-para-3-anos",
     "/guias/brinquedos-sem-tela-para-criancas",
-    "/presentes/presente-infantil-ate-50-reais"
+    "/guias/brinquedo-criativo-autonomia-4-anos"
   ]
 }

@@ -1,4 +1,9 @@
-import { getAllPages, type ContentPage, type PageType } from "@/lib/content";
+import {
+  getAllPages,
+  isPageIndexable,
+  type ContentPage,
+  type PageType,
+} from "@/lib/content";
 import { getPagePath } from "@/lib/schema";
 
 export type InternalLinkItem = {
@@ -68,7 +73,9 @@ function toInternalLink(page: ContentPage): InternalLinkItem {
 export function getSuggestedInternalLinks(
   currentPage: ContentPage,
 ): InternalLinkItem[] {
-  const pages = getAllPages().filter((page) => page.slug !== currentPage.slug);
+  const pages = getAllPages().filter(
+    (page) => page.slug !== currentPage.slug && isPageIndexable(page),
+  );
 
   const rankedPages = pages
     .map((page) => ({
@@ -117,21 +124,14 @@ export function getManualInternalLinks(
 
   return currentPage.internal_links
     .filter((url) => url !== getPagePath(currentPage))
-    .map((url) => {
+    .flatMap((url) => {
       const linkedPage = pagesByUrl.get(url);
 
-      if (linkedPage) {
-        return toInternalLink(linkedPage);
+      if (!linkedPage || !isPageIndexable(linkedPage)) {
+        return [];
       }
 
-      const slug = url.split("/").filter(Boolean).at(-1) ?? url;
-
-      return {
-        slug,
-        title: slug.replaceAll("-", " "),
-        type: currentPage.type,
-        url,
-      };
+      return [toInternalLink(linkedPage)];
     });
 }
 

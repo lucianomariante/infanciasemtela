@@ -1,6 +1,8 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { GuideTemplate } from "@/components/templates/GuideTemplate";
-import { getPageBySlug } from "@/lib/content";
+import { getAllPages, getPageBySlug } from "@/lib/content";
+import { buildPageMetadata, notFoundMetadata } from "@/lib/seo";
 
 type Props = {
   params: Promise<{
@@ -8,20 +10,21 @@ type Props = {
   }>;
 };
 
-export async function generateMetadata({ params }: Props) {
+export function generateStaticParams() {
+  return getAllPages()
+    .filter((page) => page.type === "guide")
+    .map((page) => ({ slug: page.slug }));
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const page = getPageBySlug(slug);
 
   if (!page || page.type !== "guide") {
-    return {
-      title: "Página não encontrada",
-    };
+    return notFoundMetadata;
   }
 
-  return {
-    title: page.title,
-    description: page.intro,
-  };
+  return buildPageMetadata(page);
 }
 
 export default async function Page({ params }: Props) {

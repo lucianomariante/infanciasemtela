@@ -1,4 +1,5 @@
 import { ProductImage } from "@/components/ProductImage";
+import { TrackedAffiliateLink } from "@/components/TrackedLink";
 import { Icon } from "@/components/ui/Icon";
 import { RecommendationBadge } from "@/components/ui/RecommendationBadge";
 import { normalizeAffiliateUrl, type ProductWithScore } from "@/lib/products";
@@ -34,18 +35,28 @@ export function QuickSummaryCard({
         <p className="mt-3 flex-1 text-sm leading-6 text-stone-600">
           {product.description}
         </p>
-        <a
-          href={href}
-          target="_blank"
-          rel="nofollow sponsored noopener noreferrer"
-          className="mt-5 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-teal-700 px-4 py-3 text-sm font-bold text-white shadow-sm shadow-teal-950/15 transition hover:bg-emerald-800 focus:outline-none focus:ring-2 focus:ring-teal-600 focus:ring-offset-2"
-        >
-          Ver preço na Amazon
-          <Icon className="size-4" name="external" />
-        </a>
-        <p className="mt-2 text-center text-[0.7rem] leading-5 text-stone-500">
-          Preço e disponibilidade podem mudar.
-        </p>
+        {href !== "#" ? (
+          <>
+            <TrackedAffiliateLink
+              href={href}
+              placement="summary"
+              productTitle={product.title}
+              target="_blank"
+              rel="nofollow sponsored noopener noreferrer"
+              className="mt-5 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-teal-700 px-4 py-3 text-sm font-bold text-white shadow-sm shadow-teal-950/15 transition hover:bg-emerald-800 focus:outline-none focus:ring-2 focus:ring-teal-600 focus:ring-offset-2"
+            >
+              Ver preço na Amazon
+              <Icon className="size-4" name="external" />
+            </TrackedAffiliateLink>
+            <p className="mt-2 text-center text-[0.7rem] leading-5 text-stone-500">
+              Preço e disponibilidade podem mudar.
+            </p>
+          </>
+        ) : (
+          <p className="mt-5 rounded-xl bg-stone-100 px-4 py-3 text-center text-sm font-semibold text-stone-600">
+            Link de compra em revisão
+          </p>
+        )}
       </div>
     </article>
   );

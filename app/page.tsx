@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { GuideCard } from "@/components/GuideCard";
+import { TrackedLink } from "@/components/TrackedLink";
 import { Icon } from "@/components/ui/Icon";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 
@@ -25,10 +26,10 @@ const featuredGuides = [
     icon: "puzzle" as const,
   },
   {
-    href: "/melhor-brinquedo-para-5-anos",
-    title: "Melhor brinquedo para 5 anos",
+    href: "/guias/brinquedos-sem-tela-para-criancas",
+    title: "Brinquedos sem tela para crianças",
     description:
-      "Ideias para a fase de criatividade, desafios simples e brincadeira ativa.",
+      "Uma seleção ampla para criar, montar, imaginar e brincar com as mãos.",
     icon: "sparkles" as const,
   },
   {
@@ -46,8 +47,8 @@ const featuredGuides = [
     icon: "blocks" as const,
   },
   {
-    href: "/presentes/presente-para-menina-de-5-anos",
-    title: "Presente para menina de 5 anos",
+    href: "/presentes/presente-para-menino-de-5-anos",
+    title: "Presente para criança de 5 anos",
     description:
       "Presentes com mais propósito para brincar, criar e explorar.",
     icon: "gift" as const,
@@ -80,6 +81,25 @@ export default function Home() {
               Curadoria de brinquedos, presentes e ideias para uma infância
               mais criativa, ativa e conectada ao que importa.
             </p>
+
+            <div className="mt-8 flex flex-wrap gap-3">
+              <TrackedLink
+                href="/guias"
+                eventName="home_primary_cta"
+                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-teal-700 px-5 py-3 text-sm font-bold text-white shadow-sm transition hover:bg-emerald-800"
+              >
+                Explorar guias
+                <Icon className="size-4" name="arrow" />
+              </TrackedLink>
+              <TrackedLink
+                href="/lista-brinquedos-sem-tela"
+                eventName="free_list_open"
+                eventProperties={{ placement: "home" }}
+                className="inline-flex min-h-12 items-center justify-center rounded-xl border border-[#d8cbb8] bg-white px-5 py-3 text-sm font-bold text-stone-800 shadow-sm transition hover:border-teal-200 hover:text-teal-800"
+              >
+                Ver lista gratuita
+              </TrackedLink>
+            </div>
 
             <div className="mt-8 flex flex-wrap gap-2.5">
               {themes.map((theme) => (
@@ -162,6 +182,30 @@ export default function Home() {
               </div>
             </article>
           ))}
+        </div>
+      </section>
+
+      <section className="mx-auto w-full max-w-6xl px-5 py-14 sm:px-8 lg:px-10">
+        <div className="grid gap-6 rounded-[1.75rem] border border-[#d8e7df] bg-[#e8f4ef] p-6 sm:p-8 lg:grid-cols-[1fr_auto] lg:items-center">
+          <div>
+            <p className="text-xs font-bold uppercase tracking-[0.2em] text-teal-700">
+              Curadoria transparente
+            </p>
+            <h2 className="mt-3 text-2xl font-semibold tracking-[-0.025em] text-stone-950">
+              Saiba o que observamos — e os limites das nossas recomendações
+            </h2>
+            <p className="mt-3 max-w-3xl text-base leading-7 text-stone-600">
+              Explicamos fontes, critérios, uso de avaliações e quando um produto
+              ainda precisa de revisão.
+            </p>
+          </div>
+          <TrackedLink
+            href="/como-avaliamos"
+            eventName="methodology_open"
+            className="inline-flex min-h-12 items-center justify-center rounded-xl bg-white px-5 py-3 text-sm font-bold text-teal-800 shadow-sm transition hover:bg-teal-50"
+          >
+            Como avaliamos
+          </TrackedLink>
         </div>
       </section>
     </main>

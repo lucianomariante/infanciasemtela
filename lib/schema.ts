@@ -36,6 +36,29 @@ export function generateFAQSchema(page: ContentPage): JsonLd | null {
   };
 }
 
+export function generateArticleSchema(page: ContentPage): JsonLd {
+  const pageUrl = `${SITE_URL}${getPagePath(page)}`;
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: page.h1,
+    description: page.intro,
+    inLanguage: "pt-BR",
+    mainEntityOfPage: pageUrl,
+    author: {
+      "@type": "Organization",
+      name: "Infância Sem Tela",
+      url: `${SITE_URL}/sobre`,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Infância Sem Tela",
+      url: SITE_URL,
+    },
+  };
+}
+
 export function generateBreadcrumbSchema(
   page: ContentPage,
   path: string,
@@ -95,8 +118,6 @@ export function generateItemListSchema(
     return null;
   }
 
-  const pagePath = getPagePath(page);
-
   return {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -104,13 +125,9 @@ export function generateItemListSchema(
     itemListOrder: "https://schema.org/ItemListOrderDescending",
     numberOfItems: products.length,
     itemListElement: products.map((product, index) => {
-      const numericPrice = getNumericPrice(product.price);
-      const hasVerifiedRating = product.rating > 0 && product.reviews > 0;
-
       return {
         "@type": "ListItem",
         position: index + 1,
-        url: `${SITE_URL}${pagePath}#${product.id}`,
         item: {
           "@type": "Product",
           name: product.title,
@@ -123,28 +140,6 @@ export function generateItemListSchema(
               }
             : {}),
           ...(product.asin ? { sku: product.asin } : {}),
-          ...(numericPrice > 0
-            ? {
-                offers: {
-                  "@type": "Offer",
-                  priceCurrency: "BRL",
-                  price: numericPrice,
-                  url:
-                    product.amazonUrl && product.amazonUrl !== ""
-                      ? product.amazonUrl
-                      : "#",
-                },
-              }
-            : {}),
-          ...(hasVerifiedRating
-            ? {
-                aggregateRating: {
-                  "@type": "AggregateRating",
-                  ratingValue: product.rating,
-                  reviewCount: product.reviews,
-                },
-              }
-            : {}),
         },
       };
     }),
@@ -175,16 +170,4 @@ function getSectionPath(page: ContentPage): string {
     case "bestof":
       return "/";
   }
-}
-
-function getNumericPrice(price: string): number {
-  const normalizedPrice = price
-    .replace("R$", "")
-    .replace(/\s+/g, "")
-    .replace(".", "")
-    .replace(",", ".");
-
-  const parsedPrice = Number.parseFloat(normalizedPrice);
-
-  return Number.isFinite(parsedPrice) ? parsedPrice : 0;
 }

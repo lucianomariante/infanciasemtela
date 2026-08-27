@@ -1,26 +1,30 @@
 import type { MetadataRoute } from "next";
-import { getAllPages } from "@/lib/content";
+import { getAllPages, isPageIndexable } from "@/lib/content";
 import { getPagePath } from "@/lib/schema";
 import { SITE_URL } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const lastModified = new Date();
   const contentPages: MetadataRoute.Sitemap = getAllPages()
+    .filter(isPageIndexable)
     .map<MetadataRoute.Sitemap[number]>((page) => ({
       url: `${SITE_URL}${getPagePath(page)}`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.8,
     }))
     .sort((a, b) => a.url.localeCompare(b.url));
 
+  const staticPaths = [
+    "",
+    "/guias",
+    "/melhores",
+    "/presentes",
+    "/lista-brinquedos-sem-tela",
+    "/sobre",
+    "/como-avaliamos",
+    "/politica-editorial",
+    "/privacidade",
+  ];
+
   return [
-    {
-      url: SITE_URL,
-      lastModified,
-      changeFrequency: "weekly",
-      priority: 1,
-    },
+    ...staticPaths.map((path) => ({ url: `${SITE_URL}${path}` })),
     ...contentPages,
   ];
 }

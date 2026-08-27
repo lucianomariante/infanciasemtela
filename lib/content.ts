@@ -8,6 +8,12 @@ export type FAQItem = {
   answer: string;
 };
 
+export type EditorialSection = {
+  title: string;
+  paragraphs: string[];
+  bullets?: string[];
+};
+
 export type ContentPage = {
   slug: string;
   type: PageType;
@@ -18,6 +24,7 @@ export type ContentPage = {
   secondary_keywords?: string[];
   page_goal?: string;
   recommended_blocks?: string[];
+  editorial_sections?: EditorialSection[];
   product_ids: string[];
   faq: FAQItem[];
   internal_links: string[];
@@ -51,4 +58,14 @@ export function getAllPages(): ContentPage[] {
       return getPageBySlug(slug);
     })
     .filter(Boolean) as ContentPage[];
+}
+
+const pagesRequiringExpertReview = new Set([
+  "brinquedo-sensorial-para-autismo-4-anos",
+]);
+
+export function isPageIndexable(page: ContentPage): boolean {
+  return (
+    page.product_ids.length > 0 && !pagesRequiringExpertReview.has(page.slug)
+  );
 }

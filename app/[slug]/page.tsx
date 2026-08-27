@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { BestOfTemplate } from "@/components/templates/BestOfTemplate";
 import { getAllPages, getPageBySlug } from "@/lib/content";
-import { getPagePath } from "@/lib/schema";
-import { SITE_URL } from "@/lib/site";
+import { buildPageMetadata, notFoundMetadata } from "@/lib/seo";
 
 type Props = {
   params: Promise<{
@@ -22,27 +21,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const page = getPageBySlug(slug);
 
   if (!page || page.type !== "bestof") {
-    return {
-      title: "Página não encontrada",
-    };
+    return notFoundMetadata;
   }
 
-  const pageUrl = `${SITE_URL}${getPagePath(page)}`;
-
-  return {
-    title: page.title,
-    description: page.intro,
-    alternates: {
-      canonical: pageUrl,
-    },
-    openGraph: {
-      title: page.title,
-      description: page.intro,
-      url: pageUrl,
-      siteName: "Infância Sem Tela",
-      type: "article",
-    },
-  };
+  return buildPageMetadata(page);
 }
 
 export default async function Page({ params }: Props) {

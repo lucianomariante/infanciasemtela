@@ -23,6 +23,28 @@
     "product-list",
     "faq"
   ],
+  "editorial_sections": [
+    {
+      "title": "Escolha para o contexto, não para mudar o comportamento da criança",
+      "paragraphs": [
+        "Em viagens, restaurantes e salas de espera, o objetivo mais realista é oferecer uma atividade possível naquele ambiente. Isso não significa exigir imobilidade nem prometer que um brinquedo vai acalmar qualquer criança.",
+        "Uma boa opção para levar costuma ter início rápido, poucas peças soltas, pouco ruído e uma forma simples de guardar. Em casa, tamanho e portabilidade podem importar menos do que variedade de uso."
+      ],
+      "bullets": [
+        "sem montagem demorada",
+        "peças contidas ou fáceis de contar",
+        "baixo risco de sujeira",
+        "desafio compatível com a idade"
+      ]
+    },
+    {
+      "title": "Monte um pequeno kit em vez de depender de um único brinquedo",
+      "paragraphs": [
+        "Duas ou três atividades diferentes podem funcionar melhor do que uma opção cara: algo para desenhar, algo para manipular e um livro curto, por exemplo. A troca de proposta ajuda quando o interesse termina sem transformar o momento em uma sequência infinita de novidades.",
+        "Teste o kit em casa antes de levá-lo para uma situação de espera. Assim você descobre o que exige ajuda, o que faz barulho e quais peças se perdem com facilidade."
+      ]
+    }
+  ],
   "product_ids": [
     "prod-busy-board-montessori",
     "prod-brinquedo-sensorial-infantil",

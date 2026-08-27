@@ -21,6 +21,28 @@
     "faq",
     "internal-links"
   ],
+  "editorial_sections": [
+    {
+      "title": "O que muda na escolha aos 3 anos",
+      "paragraphs": [
+        "Aos 3 anos, a criança costuma aproveitar melhor propostas que pode entender rapidamente e repetir sem depender de instruções longas. Empilhar, encaixar, montar, abrir, fechar e inventar pequenas histórias tende a oferecer mais possibilidades do que um brinquedo que executa tudo sozinho.",
+        "A indicação de idade do fabricante continua sendo o primeiro filtro. Depois dela, observe o que a criança já tenta fazer espontaneamente: construir, desenhar, imitar adultos, organizar peças ou explorar movimentos."
+      ],
+      "bullets": [
+        "poucas regras para começar",
+        "peças fáceis de manipular",
+        "possibilidade de repetir e variar",
+        "materiais compatíveis com a supervisão disponível"
+      ]
+    },
+    {
+      "title": "Quando um brinquedo barato pode ser a melhor compra",
+      "paragraphs": [
+        "Preço alto não garante uso frequente. Uma opção simples pode entregar mais valor quando combina com um interesse que a criança já demonstra e permite várias maneiras de brincar.",
+        "Antes de pagar por luzes, sons ou grande quantidade de peças, compare espaço para guardar, tempo de montagem, facilidade de limpeza e quanto um adulto precisará participar para a brincadeira começar."
+      ]
+    }
+  ],
   "product_ids": [
     "prod-mesinha-didatica",
     "prod-giro-magico-dismat",
