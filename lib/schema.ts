@@ -130,7 +130,7 @@ export function generateItemListSchema(
         "@type": "ListItem",
         position: index + 1,
         item: {
-          "@type": "Product",
+          "@type": "Thing",
           name: product.title,
           description: product.description,
           ...(product.imageUrl
@@ -140,7 +140,7 @@ export function generateItemListSchema(
                   : `${SITE_URL}${product.imageUrl}`,
               }
             : {}),
-          ...(product.asin ? { sku: product.asin } : {}),
+          ...(product.asin ? { identifier: product.asin } : {}),
         },
       };
     }),
