@@ -18,6 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/presentes",
     "/lista-brinquedos-sem-tela",
     "/sobre",
+    "/autores/ana-maria-mariante",
     "/como-avaliamos",
     "/politica-editorial",
     "/privacidade",

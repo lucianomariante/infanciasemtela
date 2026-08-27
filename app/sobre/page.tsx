@@ -24,6 +24,17 @@ export default function AboutPage() {
           ],
         },
         {
+          title: "Quem assina",
+          paragraphs: [
+            "Os conteúdos editoriais do Infância Sem Tela são assinados por Ana Maria Mariante, psicopedagoga. A autoria identifica com transparência a pessoa responsável pela orientação editorial apresentada nos guias.",
+            "O perfil público da autora reúne sua função no projeto e os limites desta orientação. Informações de formação, experiência ou especialidade só serão publicadas quando forem confirmadas por ela.",
+          ],
+          link: {
+            href: "/autores/ana-maria-mariante",
+            label: "Conheça a autora",
+          },
+        },
+        {
           title: "O que este site é — e o que não é",
           paragraphs: [
             "Este é um projeto de curadoria e informação para consumidores. Não substitui a orientação de pediatras, terapeutas, educadores ou outros profissionais que acompanham a criança.",

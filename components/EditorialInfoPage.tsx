@@ -2,6 +2,10 @@ import Link from "next/link";
 
 type Section = {
   bullets?: string[];
+  link?: {
+    href: string;
+    label: string;
+  };
   paragraphs: string[];
   title: string;
 };
@@ -52,6 +56,14 @@ export function EditorialInfoPage({
                     </li>
                   ))}
                 </ul>
+              ) : null}
+              {section.link ? (
+                <Link
+                  className="mt-5 inline-flex font-bold text-teal-700 hover:text-teal-900"
+                  href={section.link.href}
+                >
+                  {section.link.label} →
+                </Link>
               ) : null}
             </section>
           ))}

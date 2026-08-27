@@ -2,6 +2,7 @@ import Link from "next/link";
 
 const editorialLinks = [
   { href: "/sobre", label: "Sobre o projeto" },
+  { href: "/autores/ana-maria-mariante", label: "Quem assina" },
   { href: "/como-avaliamos", label: "Como avaliamos" },
   { href: "/politica-editorial", label: "Política editorial" },
   { href: "/privacidade", label: "Privacidade" },

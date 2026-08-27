@@ -1,14 +1,21 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { EditorialTrustBar } from "@/components/EditorialTrustBar";
 import { PrintButton } from "@/components/PrintButton";
 import { Icon } from "@/components/ui/Icon";
-import { SITE_URL } from "@/lib/site";
+import { EDITORIAL_AUTHOR, SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "10 brinquedos sem tela para imprimir e consultar",
   description:
     "Lista prática com 10 tipos de brinquedos sem tela, perguntas para escolher melhor e pontos de atenção por perfil de brincadeira.",
   alternates: { canonical: `${SITE_URL}/lista-brinquedos-sem-tela` },
+  authors: [
+    {
+      name: EDITORIAL_AUTHOR.name,
+      url: EDITORIAL_AUTHOR.url,
+    },
+  ],
   openGraph: {
     title: "10 brinquedos sem tela para imprimir e consultar",
     description:
@@ -85,6 +92,12 @@ export default function FreeListPage() {
       "Lista prática com tipos de brinquedos sem tela e critérios de escolha.",
     inLanguage: "pt-BR",
     mainEntityOfPage: `${SITE_URL}/lista-brinquedos-sem-tela`,
+    author: {
+      "@type": "Person",
+      name: EDITORIAL_AUTHOR.name,
+      jobTitle: EDITORIAL_AUTHOR.role,
+      url: EDITORIAL_AUTHOR.url,
+    },
     publisher: {
       "@type": "Organization",
       name: "Infância Sem Tela",
@@ -118,6 +131,7 @@ export default function FreeListPage() {
             complexo: é aquele que combina com a idade, o interesse, a rotina e
             o espaço disponível para brincar.
           </p>
+          <EditorialTrustBar />
           <div className="mt-7">
             <PrintButton />
           </div>

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import type { ContentPage } from "@/lib/content";
 import { isPageIndexable } from "@/lib/content";
 import { getPagePath } from "@/lib/schema";
-import { SITE_NAME, SITE_URL } from "@/lib/site";
+import { EDITORIAL_AUTHOR, SITE_NAME, SITE_URL } from "@/lib/site";
 
 export function buildPageMetadata(page: ContentPage): Metadata {
   const path = getPagePath(page);
@@ -15,6 +15,12 @@ export function buildPageMetadata(page: ContentPage): Metadata {
     alternates: {
       canonical: pageUrl,
     },
+    authors: [
+      {
+        name: EDITORIAL_AUTHOR.name,
+        url: EDITORIAL_AUTHOR.url,
+      },
+    ],
     robots: indexable
       ? { index: true, follow: true }
       : { index: false, follow: true },

@@ -6,3 +6,9 @@ export const SITE_NAME = "Infância Sem Tela";
 
 export const SITE_DESCRIPTION =
   "Guias práticos para escolher brinquedos, presentes e ideias sem tela para crianças.";
+
+export const EDITORIAL_AUTHOR = {
+  name: "Ana Maria Mariante",
+  role: "Psicopedagoga",
+  url: `${SITE_URL}/autores/ana-maria-mariante`,
+} as const;

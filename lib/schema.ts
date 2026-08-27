@@ -1,6 +1,6 @@
 import type { ContentPage } from "@/lib/content";
 import type { ProductWithScore } from "@/lib/products";
-import { SITE_URL } from "@/lib/site";
+import { EDITORIAL_AUTHOR, SITE_URL } from "@/lib/site";
 
 type JsonLd = Record<string, unknown>;
 
@@ -47,9 +47,10 @@ export function generateArticleSchema(page: ContentPage): JsonLd {
     inLanguage: "pt-BR",
     mainEntityOfPage: pageUrl,
     author: {
-      "@type": "Organization",
-      name: "Infância Sem Tela",
-      url: `${SITE_URL}/sobre`,
+      "@type": "Person",
+      name: EDITORIAL_AUTHOR.name,
+      jobTitle: EDITORIAL_AUTHOR.role,
+      url: EDITORIAL_AUTHOR.url,
     },
     publisher: {
       "@type": "Organization",
