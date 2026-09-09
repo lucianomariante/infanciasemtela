@@ -40,3 +40,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# copias locais e saidas temporarias (nao versionar)
+infancia-sem-tela-app - Copia/
+infancia-sem-tela/
+output/
+tmp/

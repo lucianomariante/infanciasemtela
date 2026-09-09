@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { AffiliateDisclosure } from "@/components/AffiliateDisclosure";
 import { EditorialTrustBar } from "@/components/EditorialTrustBar";
 import { FAQ } from "@/components/FAQ";
 import { InternalLinks } from "@/components/InternalLinks";
@@ -70,10 +69,9 @@ export function EditorialTemplate({
           />
         ))}
 
-        <AffiliateDisclosure />
-        <EditorialTrustBar />
+        <EditorialTrustBar showAffiliateNotice />
 
-        <section className="relative mt-8 overflow-hidden rounded-[2rem] border border-[#e7dccb] bg-white px-6 py-9 shadow-[0_18px_55px_rgba(73,58,39,0.08)] sm:mt-10 sm:px-10 sm:py-12 lg:grid lg:grid-cols-[1fr_0.34fr] lg:gap-10">
+        <section className="relative mt-5 overflow-hidden rounded-[2rem] border border-[#e7dccb] bg-white px-6 py-9 shadow-[0_18px_55px_rgba(73,58,39,0.08)] sm:mt-6 sm:px-10 sm:py-12 lg:grid lg:grid-cols-[1fr_0.34fr] lg:gap-10">
           <div className="relative z-10">
             <nav className="flex items-center gap-2 text-xs font-semibold text-stone-500" aria-label="Breadcrumb">
               <Link href="/" className="hover:text-teal-700">Início</Link>
