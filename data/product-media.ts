@@ -32,7 +32,7 @@ export type ProductMedia = {
  * 5. Use badge apenas quando precisar sobrescrever o selo de products.json.
  * 6. Não altere os links afiliados aqui; eles continuam em products.json.
  */
-export const productMedia = {
+export const productMedia: Record<string, ProductMedia> = {
   "prod-laboratorio-show-da-luna": {
     asin: "B0BXFQMJPM",
     ageRange: "5 anos ou mais",
@@ -81,11 +81,11 @@ export const productMedia = {
       "Giro Mágico Infantil Dismat com engrenagens coloridas para estimular coordenação motora",
   },
   "prod-fisher-price-torre-potinhos": {
-    asin: "",
-    ageRange: "",
-    badge: "",
-    imageUrl: "",
-    imageAlt: "",
+    ageRange: "6 meses a 3 anos",
+    badge: "Primeira infância",
+    imageUrl: "/images/products/fisher-price-torre-potinhos-coloridos.webp",
+    imageAlt:
+      "Torre de potinhos coloridos Fisher-Price empilháveis para bebês e crianças pequenas",
   },
   "prod-formas-magicas-babebi": {
     asin: "B08YGSVTPJ",
