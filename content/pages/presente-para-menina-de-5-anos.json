@@ -19,7 +19,15 @@
     "product-list",
     "faq"
   ],
-  "product_ids": [],
+  "product_ids": [
+    "prod-laboratorio-show-da-luna",
+    "prod-formas-magicas-babebi",
+    "prod-box-block-dismat",
+    "prod-quebra-cabeca-infantil",
+    "prod-lousa-magnetica-infantil",
+    "prod-mesinha-didatica",
+    "prod-brastoy-blocos-magneticos-108"
+  ],
   "faq": [
     {
       "question": "Quais critérios devo considerar ao escolher um presente para uma menina de 5 anos?",
@@ -38,5 +46,9 @@
       "answer": "Compare opções com boa relação custo-benefício, leia avaliações de outros pais e priorize brinquedos que promovam uso repetido, curiosidade ou atividades em família."
     }
   ],
-  "internal_links": []
+  "internal_links": [
+    "/melhor-brinquedo-para-5-anos",
+    "/presentes/presente-para-menino-de-5-anos",
+    "/presentes/presente-de-natal-para-crianca-de-5-anos"
+  ]
 }

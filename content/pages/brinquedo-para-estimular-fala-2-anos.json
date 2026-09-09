@@ -20,7 +20,13 @@
     "how-to-play",
     "faq"
   ],
-  "product_ids": [],
+  "product_ids": [
+    "prod-girafa-didatica-mercotoys",
+    "prod-cubo-didatico-mercotoys",
+    "prod-mesinha-didatica",
+    "prod-fisher-price-torre-potinhos",
+    "prod-giro-magico-dismat"
+  ],
   "faq": [
     {
       "question": "Como escolher brinquedos que estimulam a fala aos 2 anos?",
@@ -43,5 +49,9 @@
       "answer": "Pode haver aumento de vocabulário, uso de palavras simples, sinais de imitação de sons e maior participação na brincadeira. Cada criança tem seu ritmo de desenvolvimento, por isso observe mudanças ao longo do tempo."
     }
   ],
-  "internal_links": []
+  "internal_links": [
+    "/guias/brinquedo-de-encaixe-raciocinio-2-anos",
+    "/presentes/presente-de-natal-para-crianca-de-2-anos",
+    "/guias/brinquedos-sem-tela-para-criancas"
+  ]
 }

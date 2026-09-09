@@ -19,7 +19,13 @@
     "product-list",
     "faq"
   ],
-  "product_ids": [],
+  "product_ids": [
+    "prod-laboratorio-show-da-luna",
+    "prod-quebra-cabeca-infantil",
+    "prod-box-block-dismat",
+    "prod-formas-magicas-babebi",
+    "prod-busy-board-montessori"
+  ],
   "faq": [
     {
       "question": "Que tipos de brinquedos costumam ajudar a manter a atenção de uma criança de 5 anos?",
@@ -42,5 +48,9 @@
       "answer": "Não podemos prometer resultados de desenvolvimento. Atividades lúdicas com desafio adequado podem apoiar habilidades como concentração, memória e coordenação por meio de prática consistente."
     }
   ],
-  "internal_links": []
+  "internal_links": [
+    "/melhor-brinquedo-para-5-anos",
+    "/presentes/presente-de-natal-para-crianca-de-5-anos",
+    "/guias/brinquedos-sem-tela-para-criancas"
+  ]
 }

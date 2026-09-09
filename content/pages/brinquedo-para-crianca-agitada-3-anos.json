@@ -19,7 +19,13 @@
     "buying-guide",
     "faq"
   ],
-  "product_ids": [],
+  "product_ids": [
+    "prod-box-block-dismat",
+    "prod-giro-magico-dismat",
+    "prod-formas-magicas-babebi",
+    "prod-busy-board-montessori",
+    "prod-jogo-encaixe-madeira"
+  ],
   "faq": [
     {
       "question": "Qual tipo de brinquedo é mais indicado para uma criança agitada de 3 anos?",
@@ -38,5 +44,9 @@
       "answer": "Evite itens com muitas peças pequenas ou funções complexas para uma criança de 3 anos. Prefira brinquedos simples, com instruções claras, que permitam várias formas de brincar e que possam acompanhar o ritmo da criança."
     }
   ],
-  "internal_links": []
+  "internal_links": [
+    "/melhor-brinquedo-para-3-anos",
+    "/guias/brinquedo-para-crianca-ficar-quieta-sem-tela",
+    "/presentes/presente-de-natal-para-crianca-de-3-anos"
+  ]
 }

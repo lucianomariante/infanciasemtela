@@ -19,7 +19,16 @@
     "product-list",
     "faq"
   ],
-  "product_ids": [],
+  "product_ids": [
+    "prod-laboratorio-show-da-luna",
+    "prod-box-block-dismat",
+    "prod-formas-magicas-babebi",
+    "prod-brastoy-blocos-magneticos-108",
+    "prod-quebra-cabeca-infantil",
+    "prod-lousa-magnetica-infantil",
+    "prod-busy-board-montessori",
+    "prod-giro-magico-dismat"
+  ],
   "faq": [
     {
       "question": "Qual tipo de brinquedo é mais indicado para uma criança de 5 anos?",
@@ -42,5 +51,9 @@
       "answer": "Considere brinquedos que possam ser usados em espaço interno ou externo, como bolas de encaixe, pistas simples ou atividades de arte ao ar livre que incentivem o movimento."
     }
   ],
-  "internal_links": []
+  "internal_links": [
+    "/melhor-brinquedo-para-4-anos",
+    "/presentes/presente-de-natal-para-crianca-de-5-anos",
+    "/guias/brinquedo-educativo-concentracao-5-anos"
+  ]
 }
