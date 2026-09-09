@@ -1,0 +1,68 @@
+{
+  "slug": "presente-de-dia-das-criancas-sem-tela",
+  "type": "gift",
+  "title": "Presente de Dia das Crianças sem tela",
+  "h1": "Presente de Dia das Crianças sem tela",
+  "intro": "Ideias de presente de Dia das Crianças que não envolvem tela, com opções por idade e atenção ao que sobra de interesse depois da data.",
+  "primary_keyword": "presente de dia das crianças sem tela",
+  "secondary_keywords": [
+    "presente dia das crianças",
+    "presente dia das crianças educativo",
+    "brinquedo dia das crianças",
+    "ideias presente dia das crianças"
+  ],
+  "page_goal": "Atender a busca por presente de Dia das Crianças com foco em opções sem tela.",
+  "recommended_blocks": [
+    "hero",
+    "quick-picks",
+    "product-list",
+    "how-we-chose",
+    "who-it-is-for",
+    "when-not-worth-it",
+    "faq",
+    "internal-links"
+  ],
+  "editorial_sections": [
+    {
+      "title": "Dia das Crianças não é um Natal antecipado",
+      "paragraphs": [
+        "As duas datas estão a pouco mais de dois meses de distância, e isso muda a conta. Quem gasta muito em outubro costuma chegar em dezembro sem folga, e a criança recebe dois presentes grandes em sequência sem tempo de aproveitar nenhum dos dois.",
+        "Uma saída prática é tratar as datas como um conjunto: algo menor e de uso imediato em outubro, algo mais estruturado em dezembro. Ou o contrário, se já existe um pedido específico. O que costuma não funcionar é repetir o mesmo tipo de brinquedo nas duas datas."
+      ],
+      "bullets": [
+        "combine as duas datas em vez de decidir uma por vez",
+        "outubro pede algo de uso imediato",
+        "evite repetir o mesmo tipo de brinquedo em dezembro",
+        "guarde parte do orçamento para o Natal"
+      ]
+    }
+  ],
+  "product_ids": [
+    "prod-giro-magico-dismat",
+    "prod-mesinha-didatica",
+    "prod-box-block-dismat",
+    "prod-formas-magicas-babebi",
+    "prod-laboratorio-show-da-luna",
+    "prod-brastoy-blocos-magneticos-108",
+    "prod-cubo-didatico-mercotoys"
+  ],
+  "faq": [
+    {
+      "question": "Quanto gastar no Dia das Crianças?",
+      "answer": "Não existe valor certo. Vale lembrar que o Natal vem logo depois: reservar parte do orçamento para dezembro costuma evitar a sensação de ter gasto duas vezes em pouco tempo."
+    },
+    {
+      "question": "Presente sem tela funciona no Dia das Crianças?",
+      "answer": "Funciona quando combina com o interesse atual da criança. Nessa data, brinquedos de uso imediato, que dá para abrir e começar na hora, costumam render mais do que os que exigem montagem longa."
+    },
+    {
+      "question": "Dá para presentear nas duas datas sem repetir?",
+      "answer": "Dá, tratando as duas como um conjunto. Uma opção é escolher algo menor e de uso rápido em outubro e deixar o presente mais estruturado para o Natal."
+    }
+  ],
+  "internal_links": [
+    "/presentes/presente-de-natal-sem-tela",
+    "/guias/brinquedos-sem-tela-para-criancas",
+    "/melhor-brinquedo-para-4-anos"
+  ]
+}

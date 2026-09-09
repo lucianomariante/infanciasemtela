@@ -1,0 +1,88 @@
+{
+  "slug": "presente-de-natal-sem-tela",
+  "type": "gift",
+  "title": "Presente de Natal sem tela: ideias por idade",
+  "h1": "Presente de Natal sem tela",
+  "intro": "Ideias de presente de Natal que continuam em uso depois das festas, organizadas por idade e por tipo de brincadeira.",
+  "primary_keyword": "presente de natal sem tela",
+  "secondary_keywords": [
+    "presente de natal para criança",
+    "presente de natal educativo",
+    "brinquedo de natal sem tela",
+    "ideias de presente de natal infantil",
+    "presente de natal por idade"
+  ],
+  "page_goal": "Servir de porta de entrada para quem procura presente de Natal infantil sem tela, direcionando para a página da idade certa.",
+  "recommended_blocks": [
+    "hero",
+    "quick-picks",
+    "product-list",
+    "how-we-chose",
+    "who-it-is-for",
+    "when-not-worth-it",
+    "faq",
+    "internal-links"
+  ],
+  "editorial_sections": [
+    {
+      "title": "O que torna o presente de Natal diferente",
+      "paragraphs": [
+        "Presente de Natal costuma ser escolhido por quem não convive com a criança todos os dias: avós, tios, padrinhos e amigos da família. Isso muda a decisão. Quem compra raramente sabe o que já existe na casa, e o risco de repetir um brinquedo que a criança já tem é alto.",
+        "Some a isso o efeito do volume: no Natal a criança costuma receber vários presentes de uma vez. Quando chegam muitos brinquedos parecidos no mesmo dia, é comum que nenhum receba atenção de verdade. Um presente que se destaca em janeiro costuma valer mais do que um que impressiona na noite de 24."
+      ],
+      "bullets": [
+        "combine com quem mais vai presentear para não repetir",
+        "prefira algo que continue em uso depois das festas",
+        "considere o espaço disponível na casa, não só o brinquedo",
+        "compre com antecedência: o prazo de entrega aperta em dezembro"
+      ]
+    },
+    {
+      "title": "Como usar esta página",
+      "paragraphs": [
+        "Cada faixa etária tem uma página própria, com opções pensadas para o que a criança costuma conseguir fazer sozinha naquela fase. Se você já sabe a idade, vá direto para ela. Se está escolhendo para mais de uma criança, as páginas vizinhas ajudam a comparar."
+      ],
+      "bullets": [
+        "2 anos: encaixe grande, empilhar, causa e efeito",
+        "3 anos: montagem simples, formas e primeiras regras",
+        "4 anos: construção livre e faz de conta mais elaborado",
+        "5 anos: projetos com etapas, desafio e criação própria"
+      ]
+    }
+  ],
+  "product_ids": [
+    "prod-giro-magico-dismat",
+    "prod-mesinha-didatica",
+    "prod-box-block-dismat",
+    "prod-formas-magicas-babebi",
+    "prod-laboratorio-show-da-luna",
+    "prod-cubo-didatico-mercotoys",
+    "prod-brastoy-blocos-magneticos-108",
+    "prod-quebra-cabeca-infantil"
+  ],
+  "faq": [
+    {
+      "question": "Qual a melhor hora para comprar o presente de Natal?",
+      "answer": "Comprar entre o fim de outubro e meados de novembro costuma ser mais tranquilo. Em dezembro os prazos de entrega ficam mais longos e as opções mais procuradas começam a faltar."
+    },
+    {
+      "question": "Quantos presentes são demais?",
+      "answer": "Não existe número certo, mas vale observar o efeito prático: quando chegam muitos brinquedos ao mesmo tempo, a criança costuma revezar pouco entre eles. Combinar com os outros adultos que vão presentear ajuda mais do que aumentar a quantidade."
+    },
+    {
+      "question": "Brinquedo sem tela agrada mesmo a criança no Natal?",
+      "answer": "Costuma agradar quando combina com a fase e com o interesse da criança. O que gera frustração no Natal costuma ser o brinquedo complexo demais para a idade, que exige ajuda de adulto o tempo todo, e não a ausência de tela."
+    },
+    {
+      "question": "Vale a pena presentear com brinquedo educativo?",
+      "answer": "Vale quando o brinquedo é divertido primeiro e educativo como consequência. Se a proposta parece uma tarefa escolar embrulhada, o uso costuma durar pouco."
+    }
+  ],
+  "internal_links": [
+    "/presentes/presente-de-natal-para-crianca-de-2-anos",
+    "/presentes/presente-de-natal-para-crianca-de-3-anos",
+    "/presentes/presente-de-natal-para-crianca-de-4-anos",
+    "/presentes/presente-de-natal-para-crianca-de-5-anos",
+    "/guias/brinquedos-sem-tela-para-criancas"
+  ]
+}
