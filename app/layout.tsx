@@ -39,6 +39,11 @@ export const metadata: Metadata = {
     description: SITE_DESCRIPTION,
   },
   robots: { index: true, follow: true },
+  verification: {
+    other: {
+      "p:domain_verify": "1df1868f58db7e9dc653f3356ab5112c",
+    },
+  },
 };
 
 export default function RootLayout({
