@@ -130,13 +130,6 @@ export const productMedia: Record<string, ProductMedia> = {
     imageUrl: "",
     imageAlt: "",
   },
-  "prod-pesca-magnetica": {
-    asin: "",
-    ageRange: "",
-    badge: "",
-    imageUrl: "",
-    imageAlt: "",
-  },
   "prod-brastoy-blocos-magneticos-108": {
     asin: "",
     ageRange: "",
