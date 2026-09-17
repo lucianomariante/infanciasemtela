@@ -33,6 +33,14 @@ export type ProductMedia = {
  * 6. Não altere os links afiliados aqui; eles continuam em products.json.
  */
 export const productMedia: Record<string, ProductMedia> = {
+  "prod-pescaria-magnetica-montessori": {
+    asin: "B0GJMKYND3",
+    ageRange: "",
+    badge: "",
+    imageUrl: "",
+    imageAlt:
+      "Pescaria magnética de madeira Montessori com peixinhos coloridos e duas varas",
+  },
   "prod-laboratorio-show-da-luna": {
     asin: "B0BXFQMJPM",
     ageRange: "5 anos ou mais",

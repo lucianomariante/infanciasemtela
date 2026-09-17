@@ -1,5 +1,22 @@
 [
   {
+    "id": "prod-pescaria-magnetica-montessori",
+    "title": "Pescaria Magnética de Madeira Montessori",
+    "price": "R$ 33,21",
+    "rating": 4.7,
+    "reviews": 68,
+    "tag": "Coordenação",
+    "image": "/images/product-placeholder.png",
+    "affiliate_url": "https://www.amazon.com.br/dp/B0GJMKYND3?tag=infanciasem08-20",
+    "pros": [
+      "Vem com 30 peixinhos e 2 varas magnéticas, dá para jogar em dupla",
+      "Madeira com tinta atóxica e bordas arredondadas",
+      "Alto volume de avaliações recentes na Amazon"
+    ],
+    "best_for": "crianças que gostam de brincar em turnos e repetir a mesma atividade várias vezes",
+    "short_description": "Jogo de pesca magnética em madeira, com peixinhos coloridos e duas varas, pensado para brincar em dupla ou em grupo."
+  },
+  {
     "id": "prod-laboratorio-show-da-luna",
     "title": "Laboratório Criativo Show da Luna",
     "price": "R$ 78,99",
