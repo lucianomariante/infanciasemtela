@@ -12,6 +12,7 @@
     "batch:create": "tsx scripts/batch-create-pages.ts",
     "generate:pins": "tsx scripts/generate-pins.ts",
     "generate:pin-images": "tsx scripts/generate-pin-images.ts",
+    "compose:pins": "tsx scripts/compose-pins.ts",
     "validate:content": "tsx scripts/validate-content.ts",
     "check:products": "tsx scripts/check-products.ts",
     "check:text": "tsx scripts/check-text.ts",
@@ -26,6 +27,9 @@
     "react-dom": "19.2.4"
   },
   "devDependencies": {
+    "@fontsource/montserrat": "^5.3.0",
+    "@fontsource/playfair-display": "^5.3.0",
+    "@napi-rs/canvas": "^1.0.9",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",

@@ -46,3 +46,7 @@ infancia-sem-tela-app - Copia/
 infancia-sem-tela/
 output/
 tmp/
+
+# fundos originais dos pins (grandes; ficam locais e no Drive)
+/content/pins/backgrounds/*
+!/content/pins/backgrounds/.gitkeep
