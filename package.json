@@ -12,6 +12,7 @@
     "batch:create": "tsx scripts/batch-create-pages.ts",
     "generate:pins": "tsx scripts/generate-pins.ts",
     "generate:pin-images": "tsx scripts/generate-pin-images.ts",
+    "generate:backgrounds": "tsx scripts/generate-backgrounds.ts",
     "compose:pins": "tsx scripts/compose-pins.ts",
     "validate:content": "tsx scripts/validate-content.ts",
     "check:products": "tsx scripts/check-products.ts",
