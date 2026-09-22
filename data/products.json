@@ -209,20 +209,20 @@
   },
   {
     "id": "prod-jogo-encaixe-madeira",
-    "title": "Jogo de Encaixe Infantil Madeira",
-    "price": "Consultar preço",
-    "rating": 0,
-    "reviews": 0,
-    "tag": "Encaixe em madeira",
+    "title": "Tabuleiro Educativo 3 em 1 Alfabeto, Números e Formas",
+    "price": "R$ 43,49",
+    "rating": 4.6,
+    "reviews": 30,
+    "tag": "Escolha da Amazon",
     "image": "/images/product-placeholder.png",
-    "affiliate_url": "https://amzn.to/49mJfZr",
+    "affiliate_url": "https://www.amazon.com.br/dp/B0FMS8STG2?tag=infanciasem08-20",
     "pros": [
-      "Atividade de encaixe",
-      "Estimula coordenação fina",
-      "Brincadeira manual"
+      "Três atividades em uma peça só: alfabeto, números e formas",
+      "Madeira, encaixe manual",
+      "Selo \"Escolha da Amazon\""
     ],
-    "best_for": "crianças em fase de explorar formas e encaixes",
-    "short_description": "Jogo de madeira voltado a encaixes, formas e coordenação motora fina."
+    "best_for": "crianças em fase de explorar formas, letras e encaixes",
+    "short_description": "Tabuleiro de madeira 3 em 1 com alfabeto, números e formas geométricas para encaixar."
   },
   {
     "id": "prod-lousa-magnetica-infantil",
@@ -243,19 +243,19 @@
   },
   {
     "id": "prod-brastoy-blocos-magneticos-108",
-    "title": "Brastoy Blocos de Montar Magnéticos Construção Infantil Brinquedos Educativo STEM 108 Peças",
-    "price": "Consultar preço",
-    "rating": 0,
+    "title": "Brastoy Blocos de Montar Magnéticos Construção Infantil Brinquedos Educativo STEM 120 Peças (Roda-gigante)",
+    "price": "R$ 160,55",
+    "rating": 4.8,
     "reviews": 0,
     "tag": "Construção STEM",
     "image": "/images/product-placeholder.png",
     "affiliate_url": "https://amzn.to/4fbr8t9",
     "pros": [
-      "Blocos de montar magnéticos",
-      "Permite construções variadas",
+      "Blocos de montar magnéticos, 120 peças",
+      "Permite construções variadas, incluindo roda-gigante",
       "Proposta criativa"
     ],
     "best_for": "crianças que gostam de montar estruturas e experimentar formas",
-    "short_description": "Conjunto magnético de 108 peças para construções e brincadeiras criativas."
+    "short_description": "Conjunto magnético de 120 peças para construções e brincadeiras criativas."
   }
 ]

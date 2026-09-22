@@ -125,7 +125,7 @@ export const productMedia: Record<string, ProductMedia> = {
     imageAlt: "",
   },
   "prod-jogo-encaixe-madeira": {
-    asin: "",
+    asin: "B0FMS8STG2",
     ageRange: "",
     badge: "",
     imageUrl: "",
