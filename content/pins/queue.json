@@ -484,5 +484,49 @@
     "pin_title": "Presente para menino de 5 anos: construção, quebra-cabeça e movimento",
     "pin_description": "Blocos, quebra-cabeças e brincadeiras de movimento: ideias de presente sem tela para meninos de 5 anos que continuam em uso depois da empolgação.",
     "board": "Brinquedos e Presentes sem Tela"
+  },
+  {
+    "id": "dia-criancas-c",
+    "page": "presente-de-dia-das-criancas-sem-tela",
+    "background": "festa-dia-das-criancas.jpg",
+    "template": "overlay-top",
+    "title": "Dia das Crianças chegando. E o presente?",
+    "subtitle": "Ideias sem tela por idade",
+    "pin_title": "Presente de Dia das Crianças: o que dar sem apelar para a tela",
+    "pin_description": "Faltam poucos dias. Veja ideias de presente por idade que não dependem de celular, tablet ou TV.",
+    "board": "Brinquedos e Presentes sem Tela"
+  },
+  {
+    "id": "dia-criancas-d",
+    "page": "presente-de-dia-das-criancas-sem-tela",
+    "background": "festa-dia-das-criancas.jpg",
+    "template": "band-bottom",
+    "title": "Presente de Dia das Crianças: 2 a 5 anos",
+    "subtitle": "Sem tela",
+    "pin_title": "Presente de Dia das Crianças sem tela: ideias de 2 a 5 anos",
+    "pin_description": "Não sabe o que dar? Veja ideias de presente sem tela para cada idade.",
+    "board": "Brinquedos e Presentes sem Tela"
+  },
+  {
+    "id": "dia-criancas-menina",
+    "page": "presente-para-menina-de-5-anos",
+    "background": "mesa-desenho-criativo.jpg",
+    "template": "card-center",
+    "title": "Presente de Dia das Crianças para menina de 5 anos",
+    "subtitle": "Sem tela",
+    "pin_title": "Presente de Dia das Crianças para menina de 5 anos",
+    "pin_description": "Ideias de presente sem tela para meninas de 5 anos. Veja as opções.",
+    "board": "Brinquedos e Presentes sem Tela"
+  },
+  {
+    "id": "dia-criancas-menino",
+    "page": "presente-para-menino-de-5-anos",
+    "background": "blocos-tapete-luz.jpg",
+    "template": "band-top",
+    "title": "Presente de Dia das Crianças para menino de 5 anos",
+    "subtitle": "Sem tela",
+    "pin_title": "Presente de Dia das Crianças para menino de 5 anos",
+    "pin_description": "Ideias de presente sem tela para meninos de 5 anos. Veja as opções.",
+    "board": "Brinquedos e Presentes sem Tela"
   }
 ]
