@@ -122,6 +122,68 @@ Cantinho de leitura: livros ilustrados infantis abertos e fechados (ilustraçõe
 
 ---
 
+## Fase 2: movimento, crianças e cor
+
+Os 14 fundos acima são quase todos a mesma cena clara de madeira. Estes trazem
+crianças brincando, movimento e cor. **Atenção:** aqui há pessoas geradas por IA,
+então ao agendar marque "This Pin includes an AI-generated person" no Pinterest.
+Crianças sempre de costas, de perfil ou com o rosto virado, nunca em close.
+
+**Variedade:** cada prompt define tom de pele e tipo de cabelo, de propósito diferentes
+entre as cenas. Evite escrever "brasileira" nos prompts: sem aparência definida, o
+Gemini tende a repetir o mesmo padrão. Se ele ignorar a descrição, gere de novo.
+
+Trecho final já colado em todos:
+
+> Fotografia vertical 3:4, alta resolução, realista, cores vivas e saturadas porém
+> naturais (amarelo-sol, azul-cobalto, vermelho-tomate, verde-folha), luz natural,
+> leve desfoque de movimento. O assunto principal fica na metade inferior; o terço
+> superior é uma área calma e vazia. NENHUM texto, letra, número, logotipo ou marca
+> d'água na imagem. Sem marcas de produto, sem embalagens reais. Crianças de 4 a 5 anos,
+> vistas de costas, de perfil ou com o rosto virado, nunca em close.
+
+### crianca-torre-blocos-cor.jpg
+```
+Criança pequena de costas, agachada sobre um tapete colorido, empilhando uma torre alta de blocos de madeira pintados em cores vivas; a torre balança e dois blocos caem em movimento. Brinquedos espalhados ao redor, na metade inferior. Parede lisa e clara acima. Fotografia vertical 3:4, alta resolução, realista, cores vivas e saturadas porém naturais (amarelo-sol, azul-cobalto, vermelho-tomate, verde-folha), luz natural, leve desfoque de movimento. O terço superior é uma área calma e vazia. NENHUM texto, letra, número, logotipo ou marca d'água na imagem. Sem marcas de produto, sem embalagens reais. Criança de pele clara e cabelo castanho liso, 4 anos, de costas, nunca em close do rosto.
+```
+
+### criancas-correndo-quintal.jpg
+```
+Duas crianças correndo de costas por um gramado ensolarado, uma levando um aro de madeira colorido, bolhas de sabão no ar, cabelos e roupas em movimento, na metade inferior da imagem. Céu azul limpo ocupando o terço superior. Fotografia vertical 3:4, alta resolução, realista, cores vivas e saturadas porém naturais (amarelo-sol, azul-cobalto, vermelho-tomate, verde-folha), luz natural de fim de manhã, leve desfoque de movimento. O terço superior é uma área calma e vazia. NENHUM texto, letra, número, logotipo ou marca d'água na imagem. Sem marcas de produto, sem embalagens reais. Duas crianças de 4 a 5 anos: uma de pele parda e cabelo cacheado, outra de pele clara e cabelo loiro liso; de costas, nunca em close do rosto.
+```
+
+### maos-massinha-cor.jpg
+```
+Close nas mãos de uma criança modelando massinha em cores vivas (vermelho, amarelo, azul, verde) sobre uma mesa de madeira clara, com cortadores de madeira e pedacinhos de massinha espalhados, na metade inferior. Aparecem apenas mãos e antebraços, nenhum rosto. Mesa vazia na parte de cima. Fotografia vertical 3:4, alta resolução, realista, cores vivas e saturadas porém naturais (amarelo-sol, azul-cobalto, vermelho-tomate, verde-folha), luz natural de janela, leve desfoque de movimento nas mãos. O terço superior é uma área calma e vazia. NENHUM texto, letra, número, logotipo ou marca d'água na imagem. Sem marcas de produto, sem embalagens reais. Mãos de criança de pele parda.
+```
+
+### crianca-desenhando-cor.jpg
+```
+Criança de perfil, concentrada, desenhando com giz de cera em uma folha grande de papel no chão, cercada de gizes e papéis coloridos espalhados, na metade inferior. Piso de madeira clara liso acima. Fotografia vertical 3:4, alta resolução, realista, cores vivas e saturadas porém naturais (amarelo-sol, azul-cobalto, vermelho-tomate, verde-folha), luz natural de janela lateral, leve desfoque de movimento na mão que desenha. O terço superior é uma área calma e vazia. NENHUM texto, letra, número, logotipo ou marca d'água na imagem. Sem marcas de produto, sem embalagens reais. Criança de pele negra e cabelo crespo, 5 anos, de perfil, nunca em close do rosto.
+```
+
+### adulto-crianca-quebra-cabeca.jpg
+```
+Adulto e criança sentados no chão da sala montando juntos um quebra-cabeça grande e colorido, vistos pelas costas e por cima do ombro, mãos encaixando uma peça, rostos fora de quadro, na metade inferior. Piso e parede claros acima. Fotografia vertical 3:4, alta resolução, realista, cores vivas e saturadas porém naturais (amarelo-sol, azul-cobalto, vermelho-tomate, verde-folha), luz natural quente, leve desfoque de movimento nas mãos. O terço superior é uma área calma e vazia. NENHUM texto, letra, número, logotipo ou marca d'água na imagem. Sem marcas de produto, sem embalagens reais. Adulto de pele parda e criança de 4 anos de pele clara e cabelo cacheado castanho; nunca em close do rosto.
+```
+
+### crianca-pulando-almofadas.jpg
+```
+Criança pulando no ar sobre almofadas coloridas espalhadas no chão da sala, congelada no meio do salto com os braços abertos, de costas ou com o rosto virado, cabelo e roupa em movimento, na metade inferior. Parede lisa e clara acima. Fotografia vertical 3:4, alta resolução, realista, cores vivas e saturadas porém naturais (amarelo-sol, azul-cobalto, vermelho-tomate, verde-folha), luz natural de janela, leve desfoque de movimento. O terço superior é uma área calma e vazia. NENHUM texto, letra, número, logotipo ou marca d'água na imagem. Sem marcas de produto, sem embalagens reais. Criança de 5 anos de pele parda e cabelo castanho ondulado, nunca em close do rosto.
+```
+
+### festa-criancas-cor.jpg
+```
+Várias crianças sentadas de costas em um tapete de festa, brincando com brinquedos de madeira coloridos, com bandeirinhas e balões coloridos ao fundo, clima alegre de Dia das Crianças, sem nada natalino, na metade inferior. Parede clara com bandeirinhas apenas nas bordas, deixando o centro do terço superior vazio. Fotografia vertical 3:4, alta resolução, realista, cores vivas e saturadas porém naturais (amarelo-sol, azul-cobalto, vermelho-tomate, verde-folha), luz natural, leve desfoque de movimento. O terço superior é uma área calma e vazia. NENHUM texto, letra, número, logotipo ou marca d'água na imagem. Sem marcas de produto, sem embalagens reais. Grupo diverso de crianças de 4 a 5 anos: peles clara, parda e negra; cabelos lisos, cacheados e crespos; de costas, nunca em close do rosto.
+```
+
+### natal-crianca-presente-cor.jpg
+```
+Criança sentada de costas diante de uma árvore de Natal iluminada, abrindo um presente embrulhado em papel kraft com fita vermelha, brinquedos de madeira coloridos espalhados no chão, na metade inferior. Árvore desfocada com luzes quentes (bokeh) e parede lisa no terço superior. Fotografia vertical 3:4, alta resolução, realista, cores vivas porém aconchegantes (vermelho-tomate, verde-folha, amarelo-sol), luz quente, leve desfoque de movimento nas mãos. O terço superior é uma área calma e vazia. NENHUM texto, letra, número, logotipo ou marca d'água na imagem. Sem marcas de produto, sem embalagens reais. Criança de 4 anos de pele clara e cabelo loiro, de costas, nunca em close do rosto.
+```
+
+---
+
 ## Depois que a fila esvaziar
 
 A fila (`queue.json`) tem 38 pins sobre esses 14 fundos, o que rende cerca de 3
