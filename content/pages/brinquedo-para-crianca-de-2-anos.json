@@ -1,16 +1,18 @@
 {
-  "slug": "melhor-brinquedo-para-2-anos",
+  "slug": "brinquedo-para-crianca-de-2-anos",
   "type": "bestof",
-  "title": "Melhor brinquedo para 2 anos: educativos, de madeira e sem tela",
-  "h1": "Melhor brinquedo para 2 anos",
-  "intro": "Brinquedos para 2 anos escolhidos pela fase: encaixar, empilhar, explorar formas e brincar com as mãos. Todos têm indicação do fabricante para a idade e nenhum depende de tela.",
-  "primary_keyword": "melhor brinquedo para 2 anos",
+  "title": "Brinquedo para criança de 2 anos: educativos e sem tela",
+  "h1": "Brinquedo para criança de 2 anos",
+  "intro": "Ideias de brinquedo para criança de 2 anos escolhidas pela fase: encaixar, empilhar, explorar formas e brincar com as mãos. Todos têm indicação do fabricante para a idade e nenhum depende de tela.",
+  "primary_keyword": "brinquedo para criança de 2 anos",
   "secondary_keywords": [
+    "brinquedos para crianças de 2 anos",
+    "brinquedo para criança 2 anos",
+    "melhor brinquedo para criança de 2 anos",
+    "melhores brinquedos para 2 anos",
     "brinquedo educativo 2 anos",
-    "brinquedo para 2 anos",
     "brinquedo para 2 anos menina",
     "brinquedo para 2 anos masculino",
-    "brinquedo educativo 2 anos madeira",
     "brinquedos montessori 2 anos"
   ],
   "page_goal": "Ajudar pais a escolher um brinquedo para crianças de 2 anos com segurança, foco na fase de desenvolvimento e intenção de compra.",
@@ -70,9 +72,18 @@
     ]
   },
   "quick_picks": [
-    { "product_id": "prod-mesinha-didatica", "label": "Melhor geral" },
-    { "product_id": "prod-fisher-price-torre-potinhos", "label": "Para empilhar e encaixar" },
-    { "product_id": "prod-cubo-didatico-mercotoys", "label": "Para explorar formas" }
+    {
+      "product_id": "prod-mesinha-didatica",
+      "label": "Melhor geral"
+    },
+    {
+      "product_id": "prod-fisher-price-torre-potinhos",
+      "label": "Para empilhar e encaixar"
+    },
+    {
+      "product_id": "prod-cubo-didatico-mercotoys",
+      "label": "Para explorar formas"
+    }
   ],
   "product_ids": [
     "prod-mesinha-didatica",
@@ -108,7 +119,7 @@
     }
   ],
   "internal_links": [
-    "/melhor-brinquedo-para-3-anos",
+    "/brinquedo-para-crianca-de-3-anos",
     "/guias/brinquedo-de-encaixe-raciocinio-2-anos",
     "/guias/brinquedo-para-estimular-fala-2-anos",
     "/presentes/presente-de-natal-para-crianca-de-2-anos"

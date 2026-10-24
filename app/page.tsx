@@ -12,15 +12,15 @@ export const metadata: Metadata = {
 
 const featuredGuides = [
   {
-    href: "/melhor-brinquedo-para-3-anos",
-    title: "Melhor brinquedo para 3 anos",
+    href: "/brinquedo-para-crianca-de-3-anos",
+    title: "Brinquedo para criança de 3 anos",
     description:
       "Opções para estimular imaginação, autonomia e coordenação motora.",
     icon: "blocks" as const,
   },
   {
-    href: "/melhor-brinquedo-para-4-anos",
-    title: "Melhor brinquedo para 4 anos",
+    href: "/brinquedo-para-crianca-de-4-anos",
+    title: "Brinquedo para criança de 4 anos",
     description:
       "Escolhas equilibradas para brincar mais tempo sem depender de telas.",
     icon: "puzzle" as const,
@@ -34,14 +34,14 @@ const featuredGuides = [
   },
   {
     href: "/guias/brinquedo-para-crianca-ficar-quieta-sem-tela",
-    title: "Brinquedo para criança ficar quieta sem tela",
+    title: "Brinquedos para viagem de carro e restaurante",
     description:
       "Alternativas práticas para momentos de espera, restaurantes e viagens.",
     icon: "heart" as const,
   },
   {
     href: "/guias/brinquedo-montessori-coordenacao-motora-3-anos",
-    title: "Brinquedo Montessori para coordenação motora",
+    title: "Brinquedo Montessori para 3 anos",
     description:
       "Sugestões para crianças de 3 anos treinarem foco, mãos e movimento.",
     icon: "blocks" as const,

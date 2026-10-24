@@ -183,7 +183,7 @@
   },
   {
     "id": "blocos-3anos-a",
-    "page": "melhor-brinquedo-para-3-anos",
+    "page": "brinquedo-para-crianca-de-3-anos",
     "background": "blocos-tapete-luz.jpg",
     "template": "band-top",
     "title": "Melhores brinquedos para 3 anos",
@@ -248,7 +248,7 @@
   },
   {
     "id": "desenho-b",
-    "page": "melhor-brinquedo-para-4-anos",
+    "page": "brinquedo-para-crianca-de-4-anos",
     "background": "mesa-desenho-criativo.jpg",
     "template": "band-top",
     "title": "Melhores brinquedos para 4 anos",
@@ -261,7 +261,7 @@
   },
   {
     "id": "desenho-c",
-    "page": "melhor-brinquedo-para-4-anos",
+    "page": "brinquedo-para-crianca-de-4-anos",
     "background": "mesa-desenho-criativo.jpg",
     "template": "card-center",
     "title": "O que dar para uma criança de 4 anos",
@@ -285,7 +285,7 @@
   },
   {
     "id": "concentracao-b",
-    "page": "melhor-brinquedo-para-5-anos",
+    "page": "brinquedo-para-crianca-de-5-anos",
     "background": "quebra-cabeca-mesa.jpg",
     "template": "band-top",
     "title": "Melhores brinquedos para 5 anos",
@@ -296,7 +296,7 @@
   },
   {
     "id": "concentracao-c",
-    "page": "melhor-brinquedo-para-5-anos",
+    "page": "brinquedo-para-crianca-de-5-anos",
     "background": "quebra-cabeca-mesa.jpg",
     "template": "band-bottom",
     "title": "Desafio na medida",
