@@ -14,6 +14,12 @@ export type EditorialSection = {
   bullets?: string[];
 };
 
+export type ExpertNote = {
+  paragraphs: string[];
+  /** Só "aprovado" aparece na página; enquanto for "rascunho" a página fica fora do Google. */
+  status: "rascunho" | "aprovado";
+};
+
 export type ContentPage = {
   slug: string;
   type: PageType;
@@ -25,6 +31,9 @@ export type ContentPage = {
   page_goal?: string;
   recommended_blocks?: string[];
   editorial_sections?: EditorialSection[];
+  expert_note?: ExpertNote;
+  /** Os 3 destaques escolhidos à mão; sem isso, valem os 3 primeiros do ranking automático com rótulos padrão. */
+  quick_picks?: { product_id: string; label: string }[];
   product_ids: string[];
   faq: FAQItem[];
   internal_links: string[];
@@ -66,6 +75,8 @@ const pagesRequiringExpertReview = new Set([
 
 export function isPageIndexable(page: ContentPage): boolean {
   return (
-    page.product_ids.length > 0 && !pagesRequiringExpertReview.has(page.slug)
+    page.product_ids.length > 0 &&
+    !pagesRequiringExpertReview.has(page.slug) &&
+    (!page.expert_note || page.expert_note.status === "aprovado")
   );
 }

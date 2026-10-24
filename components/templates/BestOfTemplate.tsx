@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { EditorialTrustBar } from "@/components/EditorialTrustBar";
+import { ExpertNote } from "@/components/ExpertNote";
 import { FAQ } from "@/components/FAQ";
 import { InternalLinks } from "@/components/InternalLinks";
 import { LeadMagnet } from "@/components/LeadMagnet";
@@ -36,9 +37,15 @@ function getPillarH1(page: ContentPage) {
 
 export function BestOfTemplate({ page }: BestOfTemplateProps) {
   const products = getProductsByIds(page.product_ids);
-  const bestOverall = products[0];
-  const bestValue = products[1];
-  const premiumChoice = products[2];
+  const picked = page.quick_picks
+    ? page.quick_picks.map((pick) =>
+        products.find((product) => product.id === pick.product_id),
+      )
+    : products;
+  const bestOverall = picked[0];
+  const bestValue = picked[1];
+  const premiumChoice = picked[2];
+  const customLabels = page.quick_picks?.map((pick) => pick.label);
   const topicLinks = getSuggestedInternalLinks(page)
     .filter((link) => link.type === "guide")
     .slice(0, 5);
@@ -96,6 +103,8 @@ export function BestOfTemplate({ page }: BestOfTemplateProps) {
           </aside>
           <span className="absolute -right-16 -top-16 size-48 rounded-full bg-[#fde2d1]/70" />
         </section>
+
+        <ExpertNote note={page.expert_note} />
 
         <PageEditorialSections sections={page.editorial_sections} />
 
@@ -180,21 +189,21 @@ export function BestOfTemplate({ page }: BestOfTemplateProps) {
               <div className="mt-7 grid gap-5 md:grid-cols-3">
                 {bestOverall ? (
                   <QuickSummaryCard
-                    badge="Melhor geral"
+                    badge={customLabels?.[0] ?? "Melhor geral"}
                     product={bestOverall}
                     tone="teal"
                   />
                 ) : null}
                 {bestValue ? (
                   <QuickSummaryCard
-                    badge="Melhor custo-benefício"
+                    badge={customLabels?.[1] ?? "Melhor custo-benefício"}
                     product={bestValue}
                     tone="caramel"
                   />
                 ) : null}
                 {premiumChoice ? (
                   <QuickSummaryCard
-                    badge="Melhor premium"
+                    badge={customLabels?.[2] ?? "Melhor premium"}
                     product={premiumChoice}
                     tone="blue"
                   />
@@ -286,13 +295,13 @@ export function BestOfTemplate({ page }: BestOfTemplateProps) {
                 {bestOverall ? (
                   <section className="rounded-[1.75rem] border border-teal-200 bg-[#edf5f2]/65 p-3 lg:col-span-2 lg:p-4">
                     <p className="px-3 pb-1 pt-2 text-xs font-bold uppercase tracking-[0.2em] text-teal-800">
-                      Melhor escolha geral
+                      {customLabels?.[0] ?? "Melhor escolha geral"}
                     </p>
                     <div className="mt-4">
                       <ProductCard
                         ageRange={bestOverall.ageRange}
                         amazonUrl={bestOverall.amazonUrl}
-                        badge="Melhor geral"
+                        badge={customLabels?.[0] ?? "Melhor geral"}
                         benefits={bestOverall.benefits}
                         bestFor={bestOverall.bestFor}
                         description={bestOverall.description}
@@ -310,13 +319,13 @@ export function BestOfTemplate({ page }: BestOfTemplateProps) {
                   {bestValue ? (
                     <section className="rounded-[1.75rem] border border-[#e7dccb] bg-[#f6eee2]/55 p-3">
                       <p className="px-3 pb-1 pt-2 text-xs font-bold uppercase tracking-[0.2em] text-amber-800">
-                        Melhor custo-benefício
+                        {customLabels?.[1] ?? "Melhor custo-benefício"}
                       </p>
                       <div className="mt-4">
                         <ProductCard
                           ageRange={bestValue.ageRange}
                           amazonUrl={bestValue.amazonUrl}
-                          badge="Custo-benefício"
+                          badge={customLabels?.[1] ?? "Custo-benefício"}
                           benefits={bestValue.benefits}
                           bestFor={bestValue.bestFor}
                           description={bestValue.description}
@@ -333,13 +342,13 @@ export function BestOfTemplate({ page }: BestOfTemplateProps) {
                   {premiumChoice ? (
                     <section className="rounded-[1.75rem] border border-blue-100 bg-blue-50/55 p-3">
                       <p className="px-3 pb-1 pt-2 text-xs font-bold uppercase tracking-[0.2em] text-blue-800">
-                        Melhor opção premium
+                        {customLabels?.[2] ?? "Melhor opção premium"}
                       </p>
                       <div className="mt-4">
                         <ProductCard
                           ageRange={premiumChoice.ageRange}
                           amazonUrl={premiumChoice.amazonUrl}
-                          badge="Premium"
+                          badge={customLabels?.[2] ?? "Premium"}
                           benefits={premiumChoice.benefits}
                           bestFor={premiumChoice.bestFor}
                           description={premiumChoice.description}
