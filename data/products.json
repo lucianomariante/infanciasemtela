@@ -257,5 +257,73 @@
     ],
     "best_for": "crianças que gostam de montar estruturas e experimentar formas",
     "short_description": "Conjunto magnético de 120 peças para construções e brincadeiras criativas."
+  },
+  {
+    "id": "prod-cubo-didatico-grande-mercotoys",
+    "title": "Cubo Didático Grande - Mercotoys",
+    "price": "R$ 61,65",
+    "rating": 0,
+    "reviews": 0,
+    "tag": "Várias atividades",
+    "image": "/images/product-placeholder.png",
+    "affiliate_url": "https://www.amazon.com.br/dp/B07KFHHB6L?tag=infanciasem08-20",
+    "pros": [
+      "Cada face tem uma atividade diferente",
+      "Encaixe de formas, portinha que abre e fecha e engrenagens",
+      "Desmonta e vira um tapete de atividades no chão"
+    ],
+    "best_for": "crianças que gostam de explorar várias coisas no mesmo brinquedo",
+    "short_description": "Cubo de atividades com encaixe de formas, portinha, engrenagens e rolinho giratório. Desmonta e vira tapete para brincar no chão."
+  },
+  {
+    "id": "prod-dino-papa-tudo-elka",
+    "title": "Dino Papa Tudo com Acessórios - Elka",
+    "price": "R$ 54,99",
+    "rating": 0,
+    "reviews": 0,
+    "tag": "Colocar e tirar",
+    "image": "/images/product-placeholder.png",
+    "affiliate_url": "https://www.amazon.com.br/dp/B076X7VHWN?tag=infanciasem08-20",
+    "pros": [
+      "A criança dá as comidinhas na boca do dino",
+      "Abre a barriga para tirar tudo e recomeçar",
+      "Olhos e escamas que giram"
+    ],
+    "best_for": "crianças na fase de colocar e tirar objetos de dentro das coisas",
+    "short_description": "Dinossauro comilão: a criança coloca as comidinhas na boca, abre a barriga, tira tudo e começa a brincadeira de novo."
+  },
+  {
+    "id": "prod-pandeiro-buba",
+    "title": "Meu Primeiro Pandeiro Colorido - Buba",
+    "price": "R$ 35,69",
+    "rating": 0,
+    "reviews": 0,
+    "tag": "Sons",
+    "image": "/images/product-placeholder.png",
+    "affiliate_url": "https://www.amazon.com.br/dp/B09CLT95YJ?tag=infanciasem08-20",
+    "pros": [
+      "Primeiro contato com um instrumento musical",
+      "Leve e fácil de segurar",
+      "Cores vibrantes"
+    ],
+    "best_for": "bebês que adoram bater, chacoalhar e descobrir sons",
+    "short_description": "Pandeiro colorido para o primeiro contato com instrumentos musicais, bom para bater, chacoalhar e trabalhar a coordenação motora."
+  },
+  {
+    "id": "prod-cubo-atividades-kidino",
+    "title": "Cubo de Atividades 6 em 1 - Kidino",
+    "price": "R$ 40,84",
+    "rating": 0,
+    "reviews": 0,
+    "tag": "Sensorial",
+    "image": "/images/product-placeholder.png",
+    "affiliate_url": "https://www.amazon.com.br/dp/B0CWXFD4ZM?tag=infanciasem08-20",
+    "pros": [
+      "Seis brincadeiras: puxar, girar, encaixar e apertar",
+      "Compacto, a criança segura e gira sozinha",
+      "Sons, cores e texturas variadas"
+    ],
+    "best_for": "bebês curiosos por causa e efeito: puxo, giro, aperto e algo acontece",
+    "short_description": "Cubo compacto com seis atividades de girar, puxar, encaixar e apertar, com sons e texturas diferentes em cada face."
   }
 ]

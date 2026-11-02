@@ -145,4 +145,32 @@ export const productMedia: Record<string, ProductMedia> = {
     imageUrl: "",
     imageAlt: "",
   },
+  "prod-cubo-didatico-grande-mercotoys": {
+    asin: "B07KFHHB6L",
+    ageRange: "12 meses a 3 anos",
+    badge: "",
+    imageUrl: "",
+    imageAlt: "Cubo didático grande Mercotoys com atividades diferentes em cada face",
+  },
+  "prod-dino-papa-tudo-elka": {
+    asin: "B076X7VHWN",
+    ageRange: "A partir de 12 meses",
+    badge: "",
+    imageUrl: "",
+    imageAlt: "Dinossauro Dino Papa Tudo da Elka com comidinhas para colocar na boca",
+  },
+  "prod-pandeiro-buba": {
+    asin: "B09CLT95YJ",
+    ageRange: "6 a 18 meses",
+    badge: "",
+    imageUrl: "",
+    imageAlt: "Pandeiro colorido de bebê Meu Primeiro Pandeiro da Buba",
+  },
+  "prod-cubo-atividades-kidino": {
+    asin: "B0CWXFD4ZM",
+    ageRange: "6 meses a 3 anos",
+    badge: "",
+    imageUrl: "",
+    imageAlt: "Cubo de atividades Kidino 6 em 1 com foguete, volante e engrenagens",
+  },
 } satisfies Record<string, ProductMedia>;

@@ -64,9 +64,8 @@
     }
   ],
   "expert_note": {
-    "status": "rascunho",
+    "status": "aprovado",
     "paragraphs": [
-      "RASCUNHO PARA A ANA MARIA REVISAR E REESCREVER COM AS PALAVRAS DELA. Não publicar como está.",
       "Aos 2 anos, eu observo primeiro o que a criança já tenta fazer sozinha. Se ela encaixa tampas, empilha potes ou fica girando a roda do carrinho, o brinquedo certo é aquele que dá continuidade a essa curiosidade, com um pouco mais de desafio.",
       "Desconfio de brinquedos que fazem tudo pela criança. Os que mais ajudam nessa fase pedem que ela pegue, tente, erre e tente de novo. E sempre que possível, brinque junto: nomear as cores e as formas durante a brincadeira faz muita diferença na fala."
     ]
@@ -119,6 +118,7 @@
     }
   ],
   "internal_links": [
+    "/brinquedo-para-crianca-de-1-ano",
     "/brinquedo-para-crianca-de-3-anos",
     "/guias/brinquedo-de-encaixe-raciocinio-2-anos",
     "/guias/brinquedo-para-estimular-fala-2-anos",
